@@ -1,115 +1,67 @@
-# Titanic - Hayatta Kalma Tahmini
+# Titanic Veri Analizi ve Hayatta Kalma Tahmini
 
-Titanic veri seti üzerinde keşifçi veri analizi (EDA) ve makine öğrenmesi ile yolcuların hayatta kalma durumunu tahmin eden bir çalışmadır.
+Bu depo, `titanic.csv` veri seti üzerinde gerçekleştirilen uçtan uca keşifçi veri analizi (EDA), özellik mühendisliği (feature engineering) ve makine öğrenmesi süreçlerini içermektedir. Projenin temel amacı, yolcuların demografik ve bilet bilgilerini kullanarak hayatta kalma durumlarını tahmin eden optimize edilmiş bir sınıflandırma modeli geliştirmektir.
 
-## Veri Seti
+## Proje Özeti
 
-- **Kaynak:** `titanic.csv` — 891 yolcu, 11 değişken
+- **Veri Kaynağı:** `titanic.csv`
+- **Gözlem Sayısı:** 891
 - **Hedef Değişken:** `Survived` (0 = Hayatta Kalmadı, 1 = Hayatta Kaldı)
+- **Proje İş Akışı:** Keşifçi Veri Analizi (EDA) -> Özellik Mühendisliği -> Veri Ön İşleme -> Modelleme -> Hiperparametre Optimizasyonu
 
-| Sütun | Açıklama |
-|---|---|
-| Pclass | Bilet sınıfı (1 = Üst, 2 = Orta, 3 = Alt) |
-| Sex | Cinsiyet |
-| Age | Yaş |
-| SibSp | Gemideki kardeş/eş sayısı |
-| Parch | Gemideki ebeveyn/çocuk sayısı |
-| Fare | Bilet ücreti |
-| Embarked | Biniş limanı (C = Cherbourg, Q = Queenstown, S = Southampton) |
+## Keşifçi Veri Analizi (EDA) Bulguları
 
-**Eksik Veriler:** Age (%19.9), Cabin (%77.1), Embarked (%0.2)
+Veri seti üzerinde yapılan incelemeler ve görselleştirmeler sonucunda elde edilen temel bulgular aşağıda özetlenmiştir:
 
-## Kullanılan Kütüphaneler
+- **Eksik Veri Yönetimi:** `Cabin` değişkeni çok yüksek oranda eksik değere sahip olduğu için modelleme aşamasındaki etkisi sınırlı görülmüştür. `Age` ve `Embarked` değişkenlerindeki eksiklikler veri yapısına uygun stratejilerle doldurulmuştur.
+- **Hayatta Kalma Belirleyicileri:** Cinsiyet (`Sex`), bilet sınıfı (`Pclass`), bilet ücreti (`Fare`) ve yaş (`Age`), hayatta kalma oranı üzerinde en yüksek istatistiksel etkiye sahip değişkenlerdir.
+- **Liman Etkisi:** En çok biniş yapılan liman Southampton'dır. Ancak biniş limanının (`Embarked`) hayatta kalma üzerindeki etkisinin doğrudan değil, yolcuların bilet sınıfı (`Pclass`) dağılımı üzerinden dolaylı bir etki yarattığı saptanmıştır.
+- **Aykırı Değer (Outlier) Analizi:** `Fare` ve `Age` dağılımlarında sağa çarpıklık gözlemlenmiştir. `Fare` değişkenindeki aşırı uç değerlerin `Ticket` değişkeniyle bağlantısı tespit edilmiş ve aykırı değerler azaltılmıştır.
 
-`pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`, `scikit-learn`, `lazypredict`, `lightgbm`, `xgboost`
+## Özellik Mühendisliği (Feature Engineering)
 
-## Keşifçi Veri Analizi (EDA) — Önemli Bulgular
+Model performansını artırmak amacıyla mevcut verilerden yeni açıklayıcı değişkenler türetilmiştir:
 
-### Genel Dağılımlar
-- Yolcuların **%61.6'sı hayatta kalmadı**.
-- **%64.8'i erkek**, %35.2'si kadın.
-- Neredeyse yarısı **3. sınıf** yolcu (%55.1).
-- Büyük çoğunluk **Southampton** limanından binmiş (%72.3).
-
-### Hayatta Kalma Üzerindeki Etkiler
-
-| Değişken | Bulgu |
-|---|---|
-| **Cinsiyet** | Kadınların kurtulma oranı çok daha yüksek. Hayatta kalanların **%68.4'ü kadın**. |
-| **Bilet Sınıfı** | 1. ve 2. sınıfların neredeyse yarısı kurtulurken, 3. sınıfların çeyreği bile kurtulamamış. |
-| **Yaş** | Çocukların (0-12) kurtulma oranı en yüksek. 2. sınıftaki hayatta kalan erkeklerin tamamı 0-15 yaş arası. |
-| **Ücret** | Yüksek ücret ödeyenlerin hayatta kalma oranı belirgin şekilde daha yüksek. |
-| **Yalnızlık** | Ailesiyle/grubuyla binenlerin hayatta kalma oranı, yalnız binenlere göre daha yüksek. |
-| **Liman** | Cherbourg'dan binenlerde hayatta kalma yüksek, ancak asıl ilişki: **Liman → Pclass → Hayatta Kalma** (dolaylı). |
-
-### Korelasyon Özeti (Survived ile)
-
-| Değişken | Skor | Yorum |
-|---|---:|---|
-| Fare | +0.262 | Yüksek ücret → daha yüksek hayatta kalma |
-| Is_Alone | −0.205 | Yalnız olanlar daha az hayatta kaldı |
-| Pclass | −0.334 | Alt sınıf (3) hayatta kalmayı azaltır |
-
-## Feature Engineering
-
-- **AgeGroup:** Yaş 5 kategoriye ayrıldı (0-12, 13-20, 21-36, 37-57, 58-80)
-- **Fare_Category:** Ücret, çeyreklik gruplara (qcut) bölündü (1-4)
-- **Is_Alone:** SibSp + Parch = 0 ise yalnız (1), değilse (0)
+- **`AgeGroup`:** Yaş değişkeni demografik kırılımları daha iyi yansıtması için 5 farklı kategoriye ayrılmıştır (`0-12`, `13-20`, `21-36`, `37-57`, `58-80`).
+- **`Fare_Category`:** Ücret dağılımındaki çarpıklığı gidermek için `Fare` değişkeni çeyreklik dilimlere (qcut) bölünmüştür.
+- **`Is_Alone`:** Yolcunun beraberinde aile üyesi (kardeş/eş veya ebeveyn/çocuk) olup olmadığını belirten mantıksal bir değişken oluşturulmuştur (`SibSp + Parch == 0` ise 1, aksi halde 0).
 
 ## Veri Ön İşleme
 
-- **Fare:** Uç aykırı değer temizlendi
-- **Age eksikleri:** Pclass ve Sex gruplarının ortalamasıyla dolduruldu (train'den hesaplanıp test'e uygulandı. Böylece veri sızıntısı önlendi.)
-- **Embarked eksikleri:** Mode (en sık liman) ile dolduruldu
-- **Cabin:** Yüksek eksiklik nedeniyle çıkarıldı
-- **Sex:** Label Encoding, **Embarked:** One-Hot Encoding
-- **Ölçeklendirme:** Fare → RobustScaler, Age/SibSp/Parch → StandardScaler
+Modelin eğitimi öncesinde uygulanan dönüşüm ve standardizasyon adımları:
 
-## Model Sonuçları
+- **Eksik Değer Doldurma (Imputation):**
+  - `Embarked`: Eğitim setindeki en sık tekrar eden değer (mod) ile doldurulmuştur.
+  - `Age`: Tek bir sabit ortalama yerine, eğitim setindeki `Pclass` ve `Sex` gruplarının kırılımına göre elde edilen ortalamalar kullanılarak daha hassas bir doldurma işlemi uygulanmıştır.
+- **Kategorik Kodlama (Encoding):** `Sex` değişkeni için Label Encoding, `Embarked` değişkeni için One-Hot Encoding uygulanmıştır.
+- **Ölçeklendirme (Scaling):** Aykırı değerlere karşı daha dirençli olması amacıyla `Fare` değişkenine RobustScaler; `Age`, `SibSp` ve `Parch` değişkenlerine ise StandardScaler uygulanmıştır.
 
-LazyPredict ile hızlı bir model taraması yapıldıktan sonra en iyi 3 model üzerinde **RandomizedSearchCV** ile hiperparametre optimizasyonu uygulandı:
+## Modelleme ve Seçim
 
-| Model | CV Score | Train Acc | Test Acc |
-|---|---:|---:|---:|
-| LGBMClassifier | 0.8380 | 0.8944 | **0.8539** |
-| XGBClassifier | 0.8507 | 0.9141 | **0.8539** |
-| RandomForestClassifier | 0.8408 | 0.9085 | 0.8427 |
+Modelleme aşamasında öncelikle `LazyClassifier` ile geniş çaplı bir algoritma taraması yapılmış, ardından potansiyeli yüksek modeller üzerinde `RandomizedSearchCV` kullanılarak hiperparametre optimizasyonu gerçekleştirilmiştir. Analizler sonucunda nihai tahminleyici olarak **LGBMClassifier** seçilmiştir.
 
-**Seçilen Model: LGBMClassifier** — Test doğruluğu XGBClassifier ile eşit olmasına rağmen, train-test farkının daha düşük olması (daha az overfitting) ve hız avantajı nedeniyle tercih edilmiştir.
+LGBM modelinin test seti üzerindeki genel performans değerlendirmesi aşağıda sunulmuştur:
 
-## 📊 Model Performansı ve Sonuçlar
+- **Eğitim ve Tahmin Süresi:** 0.2925 saniye
+- **Doğruluk (Accuracy):** 0.8539
 
-LightGBM modeli kullanılarak elde edilen final test sonuçları aşağıda özetlenmiştir. Model, oldukça kısa bir sürede yüksek bir doğruluk oranına ulaşmıştır.
+**Karmaşıklık Matrisi (Confusion Matrix):**
 
-### Genel Metrikler
+| | Tahmin: 0 (Hayatta Kalmadı) | Tahmin: 1 (Hayatta Kaldı) |
+|:---|---:|---:|
+| **Gerçek: 0 (Hayatta Kalmadı)** | 97 | 9 |
+| **Gerçek: 1 (Hayatta Kaldı)** | 17 | 55 |
 
-| Metrik | Değer |
-| :--- | :--- |
-| **Genel Doğruluk Oranı (Accuracy)** | %85.39 |
-| **Eğitim ve Tahmin Süresi** | 0.5104 Saniye |
+**Sınıflandırma Raporu (Classification Report):**
 
----
-
-### Karmaşıklık Matrisi (Confusion Matrix)
-
-Modelin test verisindeki 178 yolcu üzerindeki tahmin başarı ve hata dağılımı:
-
-| | Tahmin Edilen: Hayatta Kalmadı (0) | Tahmin Edilen: Hayatta Kaldı (1) |
-| :--- | :--- | :--- |
-| **Gerçek: Hayatta Kalmadı (0)** | 97 *(Doğru Negatif)* | 9 *(Yanlış Pozitif)* |
-| **Gerçek: Hayatta Kaldı (1)** | 17 *(Yanlış Negatif)* | 55 *(Doğru Pozitif)* |
-
----
-
-### Sınıflandırma Raporu (Classification Report)
-
-| Sınıf | Precision (Kesinlik) | Recall (Duyarlılık) | F1-Score | Support (Kişi Sayısı) |
-| :--- | :--- | :--- | :--- | :--- |
-| **0 (Hayatta Kalmadı)** | 0.85 | 0.92 | 0.88 | 106 |
-| **1 (Hayatta Kaldı)** | 0.86 | 0.76 | 0.81 | 72 |
-| **Accuracy (Genel)** | | | **0.85** | **178** |
+| Sınıf | Precision | Recall | F1-Score | Support |
+|:---|---:|---:|---:|---:|
+| 0 (Hayatta Kalmadı) | 0.85 | 0.92 | 0.88 | 106 |
+| 1 (Hayatta Kaldı) | 0.86 | 0.76 | 0.81 | 72 |
+| **Accuracy** | | | **0.85** | 178 |
 | **Macro Avg** | 0.86 | 0.84 | 0.85 | 178 |
 | **Weighted Avg** | 0.85 | 0.85 | 0.85 | 178 |
 
-<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/e0998333-7ed5-4bb3-a7b2-ac9cf28d058e" />
+## Sonuç
 
+  Seçilen LGBM modeli ile veri seti üzerinde %85.39 test doğruluğuna ulaşılmış ve güçlü bir taban (baseline) model oluşturulmuştur. Özellik önem dereceleri incelendiğinde; ücret (`Fare`) ve yaş (`Age`) hayatta kalma tahminindeki en kritik belirleyiciler olduğu analitik olarak doğrulanmıştır.
