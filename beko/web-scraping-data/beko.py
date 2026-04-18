@@ -59,7 +59,7 @@ def kategori_linklerini_cek(soup):
     for item in kategori_links:
         print(f"  - {item['kategori']}: {item['full_url']}")
 
-def urunleri_cek(kategori_url, kategori_adi):
+def tur_linklerini_cek (kategori_url, kategori_adi):
     """Kategori sayfasından ürünleri çıkart - sadece <div class="plp-sub-categories"> içinden"""
     try:
         print(f"\n  📦 '{kategori_adi}' kategorisi içinden ürünler çekiliyor...")
@@ -127,6 +127,7 @@ for url in site:
         # TEST: Sadece ilk kategoriyi çek
         if kategori_links:
             print(f"\n--- TEST: İlk Kategori ({kategori_links[0]['kategori']}) ---")
-            urunleri_cek(kategori_links[1]['full_url'], kategori_links[0]['kategori'])
+            tur_linklerini_cek (kategori_links[0]['full_url'], kategori_links[0]['kategori'])
+
     
     time.sleep(2)  # İki istek arasında 2 saniye bekle
