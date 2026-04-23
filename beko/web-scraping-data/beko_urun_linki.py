@@ -131,13 +131,13 @@ def urun_detay_linklerini_cek(driver, urun_grubu_url):
         detay_linkleri = list(dict.fromkeys(detay_linkleri))
         
         if detay_linkleri:
-            with open('urun_linki.csv', 'w', newline='', encoding='utf-8') as f:
+            with open('beko_urun_linki.csv', 'w', newline='', encoding='utf-8') as f:
                 writer = csv.writer(f)
                 writer.writerow(['urun_linki'])
                 for link in detay_linkleri:
                     writer.writerow([link])
             
-            print(f"✅ Toplam {len(detay_linkleri)} ürün linki 'urun_linki.csv' dosyasına kaydedildi.")
+            print(f"✅ Toplam {len(detay_linkleri)} ürün linki 'beko_urun_linki.csv' dosyasına kaydedildi.")
         else:
             print("⚠️ Hiç ürün linki bulunamadı.")
             
