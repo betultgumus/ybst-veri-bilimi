@@ -3,6 +3,7 @@ import time
 import os
 import random
 import json
+from tqdm import tqdm
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -18,16 +19,64 @@ csv_kaydedilecek_yol = os.path.join(script_dir, 'beko_urun_ozellik.csv')
 
 # URL'leri oku
 df_urls = pd.read_csv(csv_okunacak_yol)
-urun_linkileri = df_urls['urun_linki'].tolist()
+urun_linkleri = df_urls['urun_linki'].tolist()
+
+# Tekrar eden değer kontrolü ve silinmesi (kalıcı olarak, sırayı koruyarak)
+eski_uzunluk = len(urun_linkleri)
+urun_linkleri = list(dict.fromkeys(urun_linkleri))
+tekrar_eden_sayisi = eski_uzunluk - len(urun_linkleri)
+
+if tekrar_eden_sayisi > 0:
+    print(f"Bilgi: {tekrar_eden_sayisi} adet tekrar eden link bulundu ve tekilleştirildi.")
+    # Temizlenmiş listeyi ana dosyaya da geri yansıt
+    df_urls = pd.DataFrame(urun_linkleri, columns=['urun_linki'])
+    df_urls.to_csv(csv_okunacak_yol, index=False)
+    print("Bilgi: 'beko_urun_linki.csv' dosyası tekrar edenlerden arındırılarak güncellendi.")
+else:
+    print("Bilgi: Tekrar eden link bulunmuyor.")
+
+# 20 eşit parçaya böl
+import math
+chunk_size = math.ceil(len(urun_linkleri) / 20) if urun_linkleri else 1
+link_parcalari = [urun_linkleri[i:i + chunk_size] for i in range(0, len(urun_linkleri), chunk_size)]
+
+# Boş liste kalmaması için 20'ye tamamla
+while len(link_parcalari) < 20:
+    link_parcalari.append([])
+
+urun_linkleri1 = link_parcalari[0]
+urun_linkleri2 = link_parcalari[1]
+urun_linkleri3 = link_parcalari[2]
+urun_linkleri4 = link_parcalari[3]
+urun_linkleri5 = link_parcalari[4]
+urun_linkleri6 = link_parcalari[5]
+urun_linkleri7 = link_parcalari[6]
+urun_linkleri8 = link_parcalari[7]
+urun_linkleri9 = link_parcalari[8]
+urun_linkleri10 = link_parcalari[9]
+urun_linkleri11 = link_parcalari[10]
+urun_linkleri12 = link_parcalari[11]
+urun_linkleri13 = link_parcalari[12]
+urun_linkleri14 = link_parcalari[13]
+urun_linkleri15 = link_parcalari[14]
+urun_linkleri16 = link_parcalari[15]
+urun_linkleri17 = link_parcalari[16]
+urun_linkleri18 = link_parcalari[17]
+urun_linkleri19 = link_parcalari[18]
+urun_linkleri20 = link_parcalari[19]
 
 # Sonuçların kaydedileceği değişken
 csv_file = csv_kaydedilecek_yol
-if os.path.exists(csv_file) and os.path.getsize(csv_file) > 0:
-    df_sonuc = pd.read_csv(csv_file)
-    print(f"Mevcut {len(df_sonuc)} ürün yüklendi")
-else:
+try:
+    if os.path.exists(csv_file) and os.path.getsize(csv_file) > 0:
+        df_sonuc = pd.read_csv(csv_file)
+        print(f"Mevcut {len(df_sonuc)} ürün yüklendi")
+    else:
+        df_sonuc = pd.DataFrame(columns=['urun_linki', 'urun_adi', 'fiyat', 'teknik_ozellikler', 'enerji_sinifi', 'favori_sayisi', 'yorum_sayisi', 'renk_secenekleri', 'urun_ozellikleri', 'yorumlar'])
+        print("Yeni CSV dosyası oluşturulacak")
+except Exception:
     df_sonuc = pd.DataFrame(columns=['urun_linki', 'urun_adi', 'fiyat', 'teknik_ozellikler', 'enerji_sinifi', 'favori_sayisi', 'yorum_sayisi', 'renk_secenekleri', 'urun_ozellikleri', 'yorumlar'])
-    print("Yeni CSV dosyası oluşturulacak")
+    print("Yeni CSV dosyası oluşturulacak (Mevcut dosya boş veya hatalı)")
 
 # Undetected Chromedriver ayarları
 options = uc.ChromeOptions()
@@ -39,8 +88,8 @@ options.add_argument('--disable-dev-shm-usage')
 driver = uc.Chrome(options=options, version_main=147)
 
 try:
-    for idx, url in enumerate(urun_linkileri, 1):
-        print(f"\nİşleniyor: {idx}/{len(urun_linkileri)} - {url}")
+    for idx, url in enumerate(tqdm(urun_linkleri2, desc="Ürünler İşleniyor", unit="ürün"), 1):
+        print(f"\nİşleniyor: {idx}/{len(urun_linkleri2)} - {url}")
         
         try:
             driver.get(url)

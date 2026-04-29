@@ -131,13 +131,16 @@ def urun_detay_linklerini_cek(driver, urun_grubu_url):
         detay_linkleri = list(dict.fromkeys(detay_linkleri))
         
         if detay_linkleri:
-            with open('beko_urun_linki.csv', 'w', newline='', encoding='utf-8') as f:
+            import os
+            dosya_mevcut = os.path.isfile('beko_urun_linki.csv')
+            with open('beko_urun_linki.csv', 'a', newline='', encoding='utf-8') as f:
                 writer = csv.writer(f)
-                writer.writerow(['urun_linki'])
+                if not dosya_mevcut or os.stat('beko_urun_linki.csv').st_size == 0:
+                    writer.writerow(['urun_linki'])
                 for link in detay_linkleri:
                     writer.writerow([link])
             
-            print(f"✅ Toplam {len(detay_linkleri)} ürün linki 'beko_urun_linki.csv' dosyasına kaydedildi.")
+            print(f"✅ Toplam {len(detay_linkleri)} ürün linki 'beko_urun_linki.csv' dosyasına eklendi.")
         else:
             print("⚠️ Hiç ürün linki bulunamadı.")
             
@@ -152,14 +155,24 @@ try:
         driver.get(url)
         time.sleep(2)
         
+        try:
+            cookie_btn = driver.find_element(By.ID, "onetrust-accept-btn-handler")
+            cookie_btn.click()
+            print("  ✓ Çerez uyarısı kabul edildi.")
+            time.sleep(1)
+        except:
+            pass
+        
         kategori_linklerini_cek(driver)
         
         if kategori_links:
-            print(f"\n--- TEST: İlk Kategori ({kategori_links[0]['kategori']}) ---")
-            tur_linklerini_cek(driver, kategori_links[0]['full_url'], kategori_links[0]['kategori'])
+            for kategori in kategori_links:
+                print(f"\n--- Kategori Kapsamında Çekiliyor: ({kategori['kategori']}) ---")
+                tur_linklerini_cek(driver, kategori['full_url'], kategori['kategori'])
             
             if tur_listesi:
-                print(f"\n--- TEST: Ürün detay linklerini çekme ({tur_listesi[0]['urun_adi']}) ---")
-                urun_detay_linklerini_cek(driver, tur_listesi[0]['full_url'])
+                for tur in tur_listesi:
+                    print(f"\n--- Ürün detay linklerini çekme ({tur['urun_adi']}) ---")
+                    urun_detay_linklerini_cek(driver, tur['full_url'])
 finally:
     driver.quit()
