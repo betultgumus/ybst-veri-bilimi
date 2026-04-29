@@ -6,9 +6,15 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 import time
 import re
+import os 
+
+import undetected_chromedriver as uc
+
+# Kodun çalıştığı klasörün yolunu otomatik bul
+calisma_dizini = os.path.dirname(os.path.abspath(__file__))
+csv_file = os.path.join(calisma_dizini, 'sikayet_var_urun_linki.csv')
 
 # CSV dosyasını oku
-csv_file = 'sikayet_var_urun_linki.csv'
 df = pd.read_csv(csv_file)
 
 # Ürün linklerini ve bilgilerini al
@@ -22,17 +28,19 @@ sonuclar = []
 # CSV dosyası için header tanımla
 csv_file_out = 'sikayet_var_yorum_linki.csv'
 is_first_write = True
-from selenium import webdriver
 
-options = webdriver.ChromeOptions()
-options.add_argument('--start-maximized')
-options.add_argument('--no-sandbox')
-options.add_argument('--disable-dev-shm-usage')
-# Şikayetvar'ın bot sanmasını engellemek için standart bir tarayıcı kimliği ekliyoruz
-options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36')
 
-# Standart sürücüyü başlatıyoruz (version_main vs. gerek yok)
-driver = webdriver.Chrome(options=options)
+def start_driver():
+    options = uc.ChromeOptions()
+    options.add_argument('--start-maximized')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    
+    # Buraya version_main=147 parametresini ekliyoruz!
+    driver = uc.Chrome(options=options, version_main=147)
+    return driver
+
+driver = start_driver()
 
 try:
     for idx, link in enumerate(urun_linkleri, 1):
@@ -80,10 +88,20 @@ try:
 
             # 4. yorum_linki çek (sayfadaki tüm şikayet linklerini virgülle ayırarak al)
             try:
-                # 'complaint-description' sınıfına sahip tüm a etiketlerinden href'leri çekiyoruz
-                elem_yorumlar = driver.find_elements(By.CSS_SELECTOR, "a.complaint-description")
+                # Sayfayı biraz aşağı kaydırarak (scroll) "Lazy Load" durumunu tetikleyelim
+                driver.execute_script("window.scrollBy(0, 800);")
+                time.sleep(1.5) # Kaydırdıktan sonra JavaScript'in kartları yüklemesi için kısa bir an bekle
+                
+                # Sadece time.sleep yerine WebDriverWait kullanarak elemanların var olmasını 10 saniyeye kadar bekle
+                wait = WebDriverWait(driver, 10)
+                elem_yorumlar = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "a.complaint-description")))
+    
+                # Sadece href (link) değerlerini çekip aralarına virgül koyarak tek bir string yapıyoruz
                 yorum_linkleri_str = ", ".join([el.get_attribute("href") for el in elem_yorumlar if el.get_attribute("href")])
-            except:
+    
+            except Exception as e:
+                # Eğer timeout olursa veya eleman bulunamazsa ekrana bilgi ver
+                print(f"   ✗ Yorum linkleri bulunamadı veya süre doldu.")
                 pass
 
             # 5. Şikayet sayısını içeren elemanı bul
@@ -118,7 +136,18 @@ try:
             is_first_write = False
             
         except Exception as e:
-            print(f"   ✗ Link ziyareti hatası: {str(e)}")
+            err_msg = str(e)
+            print(f"   ✗ Link ziyareti hatası: {err_msg}")
+            
+            # Eğer session düştüyse (tarayıcı kapandıysa) yeniden başlat
+            if "invalid session id" in err_msg.lower() or "target window already closed" in err_msg.lower():
+                print("   ➔ Tarayıcı oturumu koptu, yeniden başlatılıyor...")
+                try:
+                    driver.quit()
+                except:
+                    pass
+                driver = start_driver()
+                
             hata_row = {
                 'Urun_Adi_CSV': '',
                 'Urun_Linki': link,

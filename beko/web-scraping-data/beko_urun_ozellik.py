@@ -88,8 +88,8 @@ options.add_argument('--disable-dev-shm-usage')
 driver = uc.Chrome(options=options, version_main=147)
 
 try:
-    for idx, url in enumerate(tqdm(urun_linkleri2, desc="Ürünler İşleniyor", unit="ürün"), 1):
-        print(f"\nİşleniyor: {idx}/{len(urun_linkleri2)} - {url}")
+    for idx, url in enumerate(tqdm(urun_linkleri5, desc="Ürünler İşleniyor", unit="ürün"), 1):
+        print(f"\nİşleniyor: {idx}/{len(urun_linkleri5)} - {url}")
         
         try:
             driver.get(url)
