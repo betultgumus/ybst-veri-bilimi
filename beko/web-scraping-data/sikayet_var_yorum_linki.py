@@ -53,10 +53,11 @@ try:
             
             # Linke git
             driver.get(link)
-            
+        
             # Sayfanın yüklenmesi için bekle
             time.sleep(3)
             
+            # Ekstra veriler için değişkenleri başlat
             # Ekstra veriler için değişkenleri başlat
             urun_adi_cekilen = ""
             urun_puan_yuzdelik = ""
@@ -86,23 +87,83 @@ try:
             except:
                 pass
 
-            # 4. yorum_linki çek (sayfadaki tüm şikayet linklerini virgülle ayırarak al)
+            # 4. Yorumları çek - Sayfalama (Pagination) ve Güvenli Filtre ile
             try:
-                # Sayfayı biraz aşağı kaydırarak (scroll) "Lazy Load" durumunu tetikleyelim
-                driver.execute_script("window.scrollBy(0, 800);")
-                time.sleep(1.5) # Kaydırdıktan sonra JavaScript'in kartları yüklemesi için kısa bir an bekle
+                yorum_linkleri = []
+                sayfa_no = 1
                 
-                # Sadece time.sleep yerine WebDriverWait kullanarak elemanların var olmasını 10 saniyeye kadar bekle
-                wait = WebDriverWait(driver, 10)
-                elem_yorumlar = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "a.complaint-description")))
-    
-                # Sadece href (link) değerlerini çekip aralarına virgül koyarak tek bir string yapıyoruz
-                yorum_linkleri_str = ", ".join([el.get_attribute("href") for el in elem_yorumlar if el.get_attribute("href")])
-    
+                while True:
+                    print(f"   🔍 Sayfa {sayfa_no} taranıyor...")
+                    
+                    # Sayfalama butonunun (İleri oku) DOM'a yüklenmesi için EN DİBE inmemiz şart!
+                    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                    time.sleep(2)
+                    
+                    # Sayfa sonu tembel yüklemesini (lazy load) tetiklemek için ufak bir yukarı-aşağı manevrası
+                    driver.execute_script("window.scrollBy(0, -500);")
+                    time.sleep(0.5)
+                    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                    time.sleep(1.5)
+                    
+                    # Sadece senin bulduğun net sınıfı alıyoruz
+                    yorum_elemanlari = driver.find_elements(By.CSS_SELECTOR, "a.complaint-layer")
+                    
+                    yeni_bulunan = 0
+                    for elem in yorum_elemanlari:
+                        href = elem.get_attribute("href")
+                        
+                        # Link Beko şikayeti ise ve ürünün kendi ana linki değilse
+                        if href and href.startswith("https://www.sikayetvar.com/beko/"):
+                            if href != link and href not in yorum_linkleri:
+                                yorum_linkleri.append(href)
+                                yeni_bulunan += 1
+                                
+                    print(f"      > Bu sayfadan {yeni_bulunan} net şikayet alındı.")
+                    
+                    # İLERİ BUTONUNA BASIP DİĞER SAYFAYA GEÇME KISMI
+                    try:
+                        # 1. XPath karmaşasını bıraktık, en sade haliyle sadece 'icomoon-paginate-next' ikonunu arıyoruz.
+                        next_icon = WebDriverWait(driver, 5).until(
+                            EC.presence_of_element_located((By.CSS_SELECTOR, ".icomoon-paginate-next"))
+                        )
+                        
+                        # 2. İkonun içinde bulunduğu asıl baba <a> (link) etiketine (.. ile) çıkıyoruz.
+                        next_button = next_icon.find_element(By.XPATH, "..")
+                        next_url = next_button.get_attribute("href")
+                        
+                        if next_url:
+                            print(f"      > Sonraki sayfa bulundu! Geçiliyor: {next_url}") 
+                            driver.get(next_url)
+                            sayfa_no += 1
+                            time.sleep(3.5) # Yeni sayfanın yüklenmesi için bekle
+                        else:
+                            break # Link yoksa döngüyü bitir
+                            
+                    except Exception as e:
+                        # 3. KÖR UÇUŞU BİTİRDİK: Neden geçemediğini konsola yazdırıyoruz!
+                        print(f"      > İleri butonu bulunamadı. (Sebep: {type(e).__name__})")
+                        break # İleri butonu bulunamadıysa döngüyü bitir
+
+                    
+                yorum_linkleri_str = ", ".join(yorum_linkleri)
+                
+                if yorum_linkleri_str:
+                    print(f"   ✅ Toplam {sayfa_no} sayfa gezildi, {len(yorum_linkleri)} adet şikayet linki çekildi.")
+                else:
+                    print("   ⚠️ Link bulunamadı.")
+                    
+                # ÇOK ÖNEMLİ: İşlem bitince ürünün ilk sayfasına dön. 
+                # (Yoksa 5. adımdaki 'Toplam Şikayet Sayısı' kodun son sayfada patlar)
+                if sayfa_no > 1:
+                    driver.get(link)
+                    time.sleep(2)
+                    
             except Exception as e:
-                # Eğer timeout olursa veya eleman bulunamazsa ekrana bilgi ver
-                print(f"   ✗ Yorum linkleri bulunamadı veya süre doldu.")
-                pass
+                print(f"   ✗ Yorum çekme hatası: {e}")
+                yorum_linkleri_str = ", ".join(yorum_linkleri) if 'yorum_linkleri' in locals() else ""
+
+
+            
 
             # 5. Şikayet sayısını içeren elemanı bul
             try:
@@ -166,7 +227,7 @@ try:
             is_first_write = False
         
         # Rate limiting
-        time.sleep(2)
+        time.sleep(3)
 
 finally:
     driver.quit()
