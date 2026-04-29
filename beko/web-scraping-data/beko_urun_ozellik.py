@@ -12,7 +12,7 @@ import undetected_chromedriver as uc # Gizli sürücümüz
 
 # Kodun bulunduğu klasörün yolunu al
 script_dir = os.path.dirname(os.path.abspath(__file__))
-
+ 
 # CSV dosyasının tam yolunu oluştur
 csv_okunacak_yol = os.path.join(script_dir, 'beko_urun_linki.csv')
 csv_kaydedilecek_yol = os.path.join(script_dir, 'beko_urun_ozellik.csv')
