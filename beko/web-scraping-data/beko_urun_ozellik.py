@@ -70,7 +70,7 @@ urun_linkleri20 = link_parcalari[19]
 # urun_linkleri6 = sum(link_parcalari[5:9], [])
 
 # 5. indisten 12. indise kadar olan (12 dahil değil) parçaları alt alta ekle
-# urun_linkleri10 = sum(link_parcalari[9:11], [])
+urun_linkleri10 = sum(link_parcalari[9:12], [])
 
 # 5. indisten 12. indise kadar olan (12 dahil değil) parçaları alt alta ekle
 # urun_linkleri11 = sum(link_parcalari[11:13], [])
