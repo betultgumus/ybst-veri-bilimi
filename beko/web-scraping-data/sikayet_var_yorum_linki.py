@@ -87,7 +87,7 @@ try:
             except:
                 pass
 
-            # 4. Yorumları çek - Sayfalama (Pagination) ve Güvenli Filtre ile
+            # 4. Yorumları çek - Sayfalama (URL Manipülasyonu) ve Güvenli Filtre ile
             try:
                 yorum_linkleri = []
                 sayfa_no = 1
@@ -95,15 +95,20 @@ try:
                 while True:
                     print(f"   🔍 Sayfa {sayfa_no} taranıyor...")
                     
-                    # Sayfalama butonunun (İleri oku) DOM'a yüklenmesi için EN DİBE inmemiz şart!
-                    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                    time.sleep(2)
+                    # --- YENİ EKLENEN: REKLAM DEDEKTÖRÜ (Google Vignette) ---
+                    # Eğer Google tam ekran reklam patlatırsa URL değişir. Bunu yakalayıp sayfayı temiz yüklüyoruz.
+                    if "#google_vignette" in driver.current_url:
+                        print("      > ⚠️ Google reklamı tespit edildi, zırh deliniyor...")
+                        temiz_url = f"{link}?page={sayfa_no}" if sayfa_no > 1 else link
+                        driver.get(temiz_url)
+                        time.sleep(3) # Reklamsız sayfanın yüklenmesini bekle
+                    # --------------------------------------------------------
                     
-                    # Sayfa sonu tembel yüklemesini (lazy load) tetiklemek için ufak bir yukarı-aşağı manevrası
-                    driver.execute_script("window.scrollBy(0, -500);")
-                    time.sleep(0.5)
-                    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                    time.sleep(1.5)
+                    # DİKKAT: Bütün yorumların yüklenmesi için asansör gibi dibe inmiyoruz.
+                    # Bir insan gibi 1000 piksellik adımlarla aşağı doğru kaydırıp bekliyoruz.
+                    for _ in range(5):
+                        driver.execute_script("window.scrollBy(0, 1000);")
+                        time.sleep(1.5) # Her kaydırmada API'den verilerin inmesini bekle
                     
                     # Sadece senin bulduğun net sınıfı alıyoruz
                     yorum_elemanlari = driver.find_elements(By.CSS_SELECTOR, "a.complaint-layer")
@@ -114,41 +119,36 @@ try:
                         
                         # Link Beko şikayeti ise ve ürünün kendi ana linki değilse
                         if href and href.startswith("https://www.sikayetvar.com/beko/"):
-                            if href != link and href not in yorum_linkleri:
+                            
+                            # URL'de olası ?page= eklerini temizleyerek ana ürün linki mi diye kontrol et
+                            ana_link_temiz = href.split("?")[0] 
+                            
+                            if ana_link_temiz != link and href not in yorum_linkleri:
                                 yorum_linkleri.append(href)
                                 yeni_bulunan += 1
                                 
                     print(f"      > Bu sayfadan {yeni_bulunan} net şikayet alındı.")
                     
-                    # İLERİ BUTONUNA BASIP DİĞER SAYFAYA GEÇME KISMI
-                    try:
-                        # 1. XPath karmaşasını bıraktık, en sade haliyle sadece 'icomoon-paginate-next' ikonunu arıyoruz.
-                        next_icon = WebDriverWait(driver, 5).until(
-                            EC.presence_of_element_located((By.CSS_SELECTOR, ".icomoon-paginate-next"))
-                        )
-                        
-                        # 2. İkonun içinde bulunduğu asıl baba <a> (link) etiketine (.. ile) çıkıyoruz.
-                        next_button = next_icon.find_element(By.XPATH, "..")
-                        next_url = next_button.get_attribute("href")
-                        
-                        if next_url:
-                            print(f"      > Sonraki sayfa bulundu! Geçiliyor: {next_url}") 
-                            driver.get(next_url)
-                            sayfa_no += 1
-                            time.sleep(3.5) # Yeni sayfanın yüklenmesi için bekle
-                        else:
-                            break # Link yoksa döngüyü bitir
-                            
-                    except Exception as e:
-                        # 3. KÖR UÇUŞU BİTİRDİK: Neden geçemediğini konsola yazdırıyoruz!
-                        print(f"      > İleri butonu bulunamadı. (Sebep: {type(e).__name__})")
-                        break # İleri butonu bulunamadıysa döngüyü bitir
-
+                    # İLERİ SAYFAYA URL İLE GEÇME KISMI (URL Manipülasyonu)
+                    # Eğer bu sayfada YENİ hiçbir şikayet bulamadıysak, sayfalar bitmiş demektir!
+                    if yeni_bulunan == 0:
+                        print("      > Yeni şikayet bulunamadı, sayfalar bitti.")
+                        break 
+                    
+                    # Yeni şikayetler bulunduysa, sayfa numarasını 1 artır ve URL'yi kendimiz oluşturalım
+                    sayfa_no += 1
+                    next_url = f"{link}?page={sayfa_no}"
+                    
+                    print(f"      > Sonraki sayfaya geçiliyor: {next_url}") 
+                    driver.get(next_url)
+                    time.sleep(3.5) # Yeni sayfanın yüklenmesi için bekle
                     
                 yorum_linkleri_str = ", ".join(yorum_linkleri)
                 
                 if yorum_linkleri_str:
-                    print(f"   ✅ Toplam {sayfa_no} sayfa gezildi, {len(yorum_linkleri)} adet şikayet linki çekildi.")
+                    # sayfa_no en son boş sayfada 1 arttığı için ekrana yazdırırken 1 çıkarıyoruz
+                    gecerli_sayfa = sayfa_no - 1 if sayfa_no > 1 else 1 
+                    print(f"   ✅ Toplam {gecerli_sayfa} sayfa gezildi, {len(yorum_linkleri)} adet şikayet linki çekildi.")
                 else:
                     print("   ⚠️ Link bulunamadı.")
                     
@@ -161,9 +161,6 @@ try:
             except Exception as e:
                 print(f"   ✗ Yorum çekme hatası: {e}")
                 yorum_linkleri_str = ", ".join(yorum_linkleri) if 'yorum_linkleri' in locals() else ""
-
-
-            
 
             # 5. Şikayet sayısını içeren elemanı bul
             try:
@@ -180,50 +177,50 @@ try:
             
             # Sonucu kaydet
             # Eğer yorum linki varsa her linki ayrı satır yaz
-if yorum_linkleri:
-    rows = []
+            if yorum_linkleri:
+                rows = []
 
-    for yorum_linki in yorum_linkleri:
-        row_data = {
-            'Urun_Adi_CSV': urun_adi,
-            'Urun_Linki': link,
-            'Urun_Adi_Sayfadan': urun_adi_cekilen,
-            'Urun_Puan_Yuzdelik': urun_puan_yuzdelik,
-            'Anahtar_Etiketler': anahtar_etiket,
-            'Yorum_Linki': yorum_linki,
-            'Sikayet_Sayisi': sikayet_sayisi
-        }
+                for yorum_linki in yorum_linkleri:
+                    row_data = {
+                        'Urun_Adi_CSV': urun_adi,
+                        'Urun_Linki': link,
+                        'Urun_Adi_Sayfadan': urun_adi_cekilen,
+                        'Urun_Puan_Yuzdelik': urun_puan_yuzdelik,
+                        'Anahtar_Etiketler': anahtar_etiket,
+                        'Yorum_Linki': yorum_linki,
+                        'Sikayet_Sayisi': sikayet_sayisi
+                    }
 
-        rows.append(row_data)
-        sonuclar.append(row_data)
+                    rows.append(row_data)
+                    sonuclar.append(row_data)
 
-    sonuc_df_temp = pd.DataFrame(rows)
+                sonuc_df_temp = pd.DataFrame(rows)
 
-else:
-    # Hiç yorum linki bulunamazsa ürün yine kaydedilsin
-    row_data = {
-        'Urun_Adi_CSV': urun_adi,
-        'Urun_Linki': link,
-        'Urun_Adi_Sayfadan': urun_adi_cekilen,
-        'Urun_Puan_Yuzdelik': urun_puan_yuzdelik,
-        'Anahtar_Etiketler': anahtar_etiket,
-        'Yorum_Linki': '',
-        'Sikayet_Sayisi': sikayet_sayisi
-    }
+            else:
+                # Hiç yorum linki bulunamazsa ürün yine kaydedilsin
+                row_data = {
+                    'Urun_Adi_CSV': urun_adi,
+                    'Urun_Linki': link,
+                    'Urun_Adi_Sayfadan': urun_adi_cekilen,
+                    'Urun_Puan_Yuzdelik': urun_puan_yuzdelik,
+                    'Anahtar_Etiketler': anahtar_etiket,
+                    'Yorum_Linki': '',
+                    'Sikayet_Sayisi': sikayet_sayisi
+                }
 
-    sonuc_df_temp = pd.DataFrame([row_data])
-    sonuclar.append(row_data)
+                sonuc_df_temp = pd.DataFrame([row_data])
+                sonuclar.append(row_data)
 
-# CSV'ye yaz
-    sonuc_df_temp.to_csv(
-      csv_file_out,
-      mode='a',
-      header=is_first_write,
-      index=False,
-      encoding='utf-8-sig'
-)
+            # CSV'ye yaz
+            sonuc_df_temp.to_csv(
+                csv_file_out,
+                mode='a',
+                header=is_first_write,
+                index=False,
+                encoding='utf-8-sig'
+            )
 
-is_first_write = False
+            is_first_write = False
             
         except Exception as e:
             err_msg = str(e)
