@@ -65,6 +65,20 @@ urun_linkleri18 = link_parcalari[17]
 urun_linkleri19 = link_parcalari[18]
 urun_linkleri20 = link_parcalari[19]
 
+
+# 5. indisten 12. indise kadar olan (12 dahil değil) parçaları alt alta ekle
+# urun_linkleri6 = sum(link_parcalari[5:9], [])
+
+# 5. indisten 12. indise kadar olan (12 dahil değil) parçaları alt alta ekle
+# urun_linkleri10 = sum(link_parcalari[9:11], [])
+
+# 5. indisten 12. indise kadar olan (12 dahil değil) parçaları alt alta ekle
+# urun_linkleri11 = sum(link_parcalari[11:13], [])
+
+# 13. indisten 19. indise kadar olan (19 dahil değil) parçaları alt alta ekle
+# urun_linkleri20 = sum(link_parcalari[13:20], [])
+
+
 # Sonuçların kaydedileceği değişken
 csv_file = csv_kaydedilecek_yol
 try:
@@ -87,9 +101,11 @@ options.add_argument('--disable-dev-shm-usage')
 # Standart sürücü yerine 'uc' ile başlatıyoruz ve Chrome 147 sürümünü belirtiyoruz
 driver = uc.Chrome(options=options, version_main=147)
 
+# urun_linkleri_10 çekilmedi. Oçekilerek devam edilecek.
+
 try:
-    for idx, url in enumerate(tqdm(urun_linkleri5, desc="Ürünler İşleniyor", unit="ürün"), 1):
-        print(f"\nİşleniyor: {idx}/{len(urun_linkleri5)} - {url}")
+    for idx, url in enumerate(tqdm(urun_linkleri10, desc="Ürünler İşleniyor", unit="ürün"), 1):
+        print(f"\nİşleniyor: {idx}/{len(urun_linkleri10)} - {url}")
         
         try:
             driver.get(url)
