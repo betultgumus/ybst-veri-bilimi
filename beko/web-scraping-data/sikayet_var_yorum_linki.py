@@ -179,22 +179,51 @@ try:
                 print(f"   ✗ Hata (şikayet sayısı): {str(e)}")
             
             # Sonucu kaydet
-            row_data = {
-                'Urun_Adi_CSV': urun_adi,
-                'Urun_Linki': link,
-                'Urun_Adi_Sayfadan': urun_adi_cekilen,
-                'Urun_Puan_Yuzdelik': urun_puan_yuzdelik,
-                'Anahtar_Etiketler': anahtar_etiket,
-                'Yorum_Linkleri': yorum_linkleri_str,
-                'Sikayet_Sayisi': sikayet_sayisi
-            }
-            sonuclar.append(row_data)
-            
-            # Hemen CSV'ye kaydet
-            sonuc_df_temp = pd.DataFrame([row_data])
-            sonuc_df_temp.to_csv(csv_file_out, mode='a', header=is_first_write, 
-                                index=False, encoding='utf-8-sig')
-            is_first_write = False
+            # Eğer yorum linki varsa her linki ayrı satır yaz
+if yorum_linkleri:
+    rows = []
+
+    for yorum_linki in yorum_linkleri:
+        row_data = {
+            'Urun_Adi_CSV': urun_adi,
+            'Urun_Linki': link,
+            'Urun_Adi_Sayfadan': urun_adi_cekilen,
+            'Urun_Puan_Yuzdelik': urun_puan_yuzdelik,
+            'Anahtar_Etiketler': anahtar_etiket,
+            'Yorum_Linki': yorum_linki,
+            'Sikayet_Sayisi': sikayet_sayisi
+        }
+
+        rows.append(row_data)
+        sonuclar.append(row_data)
+
+    sonuc_df_temp = pd.DataFrame(rows)
+
+else:
+    # Hiç yorum linki bulunamazsa ürün yine kaydedilsin
+    row_data = {
+        'Urun_Adi_CSV': urun_adi,
+        'Urun_Linki': link,
+        'Urun_Adi_Sayfadan': urun_adi_cekilen,
+        'Urun_Puan_Yuzdelik': urun_puan_yuzdelik,
+        'Anahtar_Etiketler': anahtar_etiket,
+        'Yorum_Linki': '',
+        'Sikayet_Sayisi': sikayet_sayisi
+    }
+
+    sonuc_df_temp = pd.DataFrame([row_data])
+    sonuclar.append(row_data)
+
+# CSV'ye yaz
+    sonuc_df_temp.to_csv(
+      csv_file_out,
+      mode='a',
+      header=is_first_write,
+      index=False,
+      encoding='utf-8-sig'
+)
+
+is_first_write = False
             
         except Exception as e:
             err_msg = str(e)
