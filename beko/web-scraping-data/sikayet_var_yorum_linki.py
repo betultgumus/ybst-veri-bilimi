@@ -45,11 +45,11 @@ urun_linkleri9 = link_parcalari[8]
 urun_linkleri10 = link_parcalari[9]
 
 # İlk 4 parçayı birleştir (Artık elemanlar liste olduğu için sorunsuz çalışır)
-urun_linkleri1_4 = sum(link_parcalari[0:4], [])
+# urun_linkleri1_4 = sum(link_parcalari[0:4], [])
 
 # Yorum satırındaki diğer birleştirmeleri de ileride açarsanız diye örnek:
-# urun_linkleri4_8 = sum(link_parcalari[4:8], [])
-# urun_linkleri8_12 = sum(link_parcalari[8:10], []) 
+urun_linkleri4_8 = sum(link_parcalari[4:7], [])
+# urun_linkleri8_12 = sum(link_parcalari[7:10], []) 
 
 # Sonuçları saklamak için liste
 sonuclar = []
@@ -72,9 +72,9 @@ def start_driver():
 driver = start_driver()
 
 try:
-    for idx, link in enumerate(tqdm(urun_linkleri1_4, desc="İlerleme"), 1):
+    for idx, link in enumerate(tqdm(urun_linkleri4_8, desc="İlerleme"), 1):
         try:
-            print(f"[{idx}/{len(urun_linkleri1_4)}] Ziyaret ediliyor: {link}")
+            print(f"[{idx}/{len(urun_linkleri4_8)}] Ziyaret ediliyor: {link}")
             
             # CSV'den ilgili ürün bilgisini al
             urun_bilgisi = df[df['Urun Linki'] == link].iloc[0]
