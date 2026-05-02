@@ -70,7 +70,7 @@ urun_linkleri20 = link_parcalari[19]
 
 # urun_linkleri10 = sum(link_parcalari[9:14], [])
 
-urun_linkleri20 = sum(link_parcalari[18:20], [])
+urun_linkleri20 = sum(link_parcalari[14:20], [])
 
 
 # Sonuçların kaydedileceği değişken
