@@ -1,3 +1,9 @@
+#################################################
+# Scrapts yapısı farklılaşmış ürünler için özellikleri çekmeye çalışır. 
+# Eğer özellikler çekilemezse hata vermeden geçer ve diğer ürünlere devam eder.
+#################################################
+
+
 import pandas as pd
 import time
 import os
