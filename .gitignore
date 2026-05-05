@@ -2,9 +2,5 @@
 env/
 .idea/
 __pycache__/
-*.db
-*.sqlite
-data/processed/*.csv
-
 
 

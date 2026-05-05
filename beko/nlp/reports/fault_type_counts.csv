@@ -1,12 +1,3 @@
-﻿detected_fault_type,complaint_count
-Belirsiz,8872
-Soğutmama Problemi,1098
-Ekran / Panel Problemi,723
-Koku Problemi,668
-Ses / Gürültü Problemi,379
-Su Boşaltma Problemi,265
-Çekim Gücü Problemi,126
-Sıkma Problemi,84
-Isıtma Problemi,57
-Kurutma Problemi,55
-Su Alma Problemi,30
+version https://git-lfs.github.com/spec/v1
+oid sha256:391ecad8e8f8c7e3fe5bf9206d6987522b5860c201f39c60adcbeccc65818f3b
+size 297
