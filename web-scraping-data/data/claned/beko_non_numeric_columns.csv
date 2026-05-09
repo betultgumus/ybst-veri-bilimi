@@ -1,0 +1,1227 @@
+﻿Alt_Kategori;Kolon_Adi;Ozellik_Degeri;Frekans
+Buzdolabı;Energy_Class;E;46
+Buzdolabı;Energy_Class;D;8
+Buzdolabı;Energy_Class;C;3
+Buzdolabı;Energy_Class;B;1
+Buzdolabı;Energy_Class;;1
+Buzdolabı;Subcategory;Buzdolabı;59
+Buzdolabı;Freezer_Compartment_Technology;;54
+Buzdolabı;Freezer_Compartment_Technology;Sabit Set Değerli;5
+Buzdolabı;Freezer_Position;Dondurucu Altta;34
+Buzdolabı;Freezer_Position;Dondurucu Üstte;17
+Buzdolabı;Freezer_Position;;7
+Buzdolabı;Freezer_Position;Dondurucu Solda;1
+Buzdolabı;Electronic_Display;Electronic display on door – Kapı üzerinde elektronik display (Touch);22
+Buzdolabı;Electronic_Display;;20
+Buzdolabı;Electronic_Display;Electronic display on door – Kapı üzerinde elektronik display (Tact);9
+Buzdolabı;Electronic_Display;Electronic display Inside Body – Gövde içi display (Tact);5
+Buzdolabı;Electronic_Display;Electronic display Inside Body – Gövde içi display (Touch);1
+Buzdolabı;Electronic_Display;Elektronik İç Ekran;1
+Buzdolabı;Electronic_Display;Electronic display on front top trim – Alınlıkta display (Touch);1
+Buzdolabı;Control_System;Elektronik;45
+Buzdolabı;Control_System;;6
+Buzdolabı;Control_System;Mekanik Sensörlü;4
+Buzdolabı;Control_System;Mekanik;4
+Buzdolabı;Lighting_Type;Tavandan LED aydınlatma;32
+Buzdolabı;Lighting_Type;Yan duvarlarda LED aydınlatma;9
+Buzdolabı;Lighting_Type;Tavandan parlak LED;6
+Buzdolabı;Lighting_Type;;6
+Buzdolabı;Lighting_Type;LED;3
+Buzdolabı;Lighting_Type;Sol yan duvarda LED aydınlatma;2
+Buzdolabı;Lighting_Type;Yan duvardan parlak LED;1
+Buzdolabı;Climate_Class;SN-T;51
+Buzdolabı;Climate_Class;;6
+Buzdolabı;Climate_Class;T;2
+Buzdolabı;Noise_Level_Class;C;38
+Buzdolabı;Noise_Level_Class;B;15
+Buzdolabı;Noise_Level_Class;;6
+Buzdolabı;Cooling_System;No Frost;49
+Buzdolabı;Cooling_System;;6
+Buzdolabı;Cooling_System;Statik;3
+Buzdolabı;Cooling_System;Yarı No Frost (Sadece Dondurucu);1
+Buzdolabı;Ice_Maker_Type;Kapaklı ve Buz Haneli Buzluk (1 Adet);23
+Buzdolabı;Ice_Maker_Type;Kapaklı buzluk;13
+Buzdolabı;Ice_Maker_Type;;10
+Buzdolabı;Ice_Maker_Type;Standart buzluk;5
+Buzdolabı;Ice_Maker_Type;Modüler twist buzluk;5
+Buzdolabı;Ice_Maker_Type;Standart;2
+Buzdolabı;Ice_Maker_Type;Modüler 2'li twist buzluk;1
+Buzdolabı;Freezer_Compartment_Lighting_Type;;33
+Buzdolabı;Freezer_Compartment_Lighting_Type;Aydınlatmalı Özel Kapı Tasarımı;13
+Buzdolabı;Freezer_Compartment_Lighting_Type;LED;13
+Buzdolabı;Product_Type;;31
+Buzdolabı;Product_Type;Çift Kapılı;25
+Buzdolabı;Product_Type;Tezgah Seviyesi;3
+Derin Dondurucu;Energy_Class;E;24
+Derin Dondurucu;Energy_Class;D;1
+Derin Dondurucu;Subcategory;Derin Dondurucu;25
+Derin Dondurucu;Freezer_Compartment_Technology;;18
+Derin Dondurucu;Freezer_Compartment_Technology;Joker;6
+Derin Dondurucu;Freezer_Compartment_Technology;Multimode;1
+Derin Dondurucu;Freezer_Position;Dikey Dondurucu;19
+Derin Dondurucu;Freezer_Position;Joker Dondurucu;4
+Derin Dondurucu;Freezer_Position;Yatay Dondurucu;2
+Derin Dondurucu;Electronic_Display;;6
+Derin Dondurucu;Electronic_Display;2 Light & Pot;5
+Derin Dondurucu;Electronic_Display;Electronic display on door – Kapı üzerinde elektronik display (Touch);3
+Derin Dondurucu;Electronic_Display;Electronic display on front top trim – Alınlıkta display (Tact);3
+Derin Dondurucu;Electronic_Display;Electronic display on door – Kapı üzerinde elektronik display (Tact);2
+Derin Dondurucu;Electronic_Display;3 Light & Pot;2
+Derin Dondurucu;Electronic_Display;Only Pot without 3 light;2
+Derin Dondurucu;Electronic_Display;1;1
+Derin Dondurucu;Electronic_Display;Rotational Controller on Back wall;1
+Derin Dondurucu;Control_System;Elektronik;9
+Derin Dondurucu;Control_System;Mekanik Sensörlü;8
+Derin Dondurucu;Control_System;Mekanik;8
+Derin Dondurucu;Lighting_Type;;19
+Derin Dondurucu;Lighting_Type;LED;4
+Derin Dondurucu;Lighting_Type;Tavandan LED aydınlatma;1
+Derin Dondurucu;Lighting_Type;Yan duvarlarda LED aydınlatma;1
+Derin Dondurucu;Climate_Class;SN-T;25
+Derin Dondurucu;Noise_Level_Class;C;23
+Derin Dondurucu;Noise_Level_Class;B;2
+Derin Dondurucu;Cooling_System;Statik;13
+Derin Dondurucu;Cooling_System;No Frost;12
+Derin Dondurucu;Ice_Maker_Type;Kapaklı buzluk;8
+Derin Dondurucu;Ice_Maker_Type;;8
+Derin Dondurucu;Ice_Maker_Type;Standart buzluk;6
+Derin Dondurucu;Ice_Maker_Type;Standart;3
+Derin Dondurucu;Freezer_Compartment_Lighting_Type;;19
+Derin Dondurucu;Freezer_Compartment_Lighting_Type;LED;5
+Derin Dondurucu;Freezer_Compartment_Lighting_Type;Alınlıkta LED aydınlatma;1
+Derin Dondurucu;Product_Type;Tek Kapılı;11
+Derin Dondurucu;Product_Type;Yatay;6
+Derin Dondurucu;Product_Type;;5
+Derin Dondurucu;Product_Type;Tezgah Seviyesi;3
+Çamaşır Makinesi;Energy_Class;A;19
+Çamaşır Makinesi;Energy_Class;D;1
+Çamaşır Makinesi;Subcategory;Çamaşır Makinesi;20
+Çamaşır Makinesi;Product_Type;;19
+Çamaşır Makinesi;Product_Type;Solo;1
+Çamaşır Makinesi;Steam;Buhar Terapi;18
+Çamaşır Makinesi;Steam;Buhar;2
+Çamaşır Makinesi;Motor_Type;ProSmart™ Inverter;13
+Çamaşır Makinesi;Motor_Type;ProSmart™Inverter;5
+Çamaşır Makinesi;Motor_Type;Atlas 22mm (ATLAS32);1
+Çamaşır Makinesi;Motor_Type;;1
+Çamaşır Makinesi;Drum_Pattern;Özel Tasarım Tambur Teknolojisi;19
+Çamaşır Makinesi;Drum_Pattern;Özel Tasarım Tambur;1
+Çamaşır Makinesi;Indicator_Type;Dijital;19
+Çamaşır Makinesi;Indicator_Type;Dijital Ekran;1
+Çamaşır Makinesi;Programs;"['Buhar Terapi', 'Hijyen+', 'Leke Programı', 'Gömlek', 'Soğuk Yıkama', 'Delicates/Wool/HandWash', 'Duvet/DownWear', 'Karma', '15', 'Var', '0-24 Saat', 'Pamuklular', 'Eko 40-60', 'Sentetik', ""Hızlı 14'"", 'Sıkma Pompa', 'Durulama', 'Havalandırma (Buhar)']";8
+Çamaşır Makinesi;Programs;"['Buhar Terapi', 'Gömlek', 'Hijyen+', 'Buhar', 'Soğuk Yıkama', 'Delicates/Wool/HandWash', 'Duvet/DownWear', 'İndirilen Program', '15', 'Var', '0-24 Saat', 'Pamuklular', 'Eko 40-60', 'Sentetik', ""Hızlı 14'"", 'Sıkma Pompa', 'Durulama', 'Akıllı Program']";6
+Çamaşır Makinesi;Programs;"['Buhar Terapi', 'Açık Hava/ Spor', 'Hijyen+', 'Gömlek', 'Soğuk Yıkama', 'Delicates/Wool/HandWash', 'Duvet/DownWear', 'İndirilen Program', '15', 'Var', '0-24 Saat', 'Pamuklular', 'Eko 40-60', 'Sentetik', ""Hızlı 14'"", 'Sıkma Pompa', 'Durulama', 'Havalandırma (Buhar)']";2
+Çamaşır Makinesi;Programs;"['Buhar Terapi', 'Hijyen+', 'Leke Programı', 'Gömlek', 'Soğuk Yıkama', 'Delicates/Wool/HandWash', 'Down Wear', 'Karma', '15', 'Var', '0-24 Saat', 'Pamuklular', 'Eko 40-60', 'Sentetik', ""Hızlı 14'"", 'Sıkma Pompa', 'Durulama', 'Havalandırma (Buhar)']";1
+Çamaşır Makinesi;Programs;['Buhar Terapi', 'Down Wear / Single Duvet', 'Leke Programı', 'Gömlek', 'Soğuk Yıkama', 'Hızlı Günlük', 'Delicates/Wool/HandWash', 'Karma', '15', '0-24 Saat', 'Pamuklular', 'Eko 40-60', 'Sentetik', 'Cottons with Prewash', 'Sıkma Pompa', 'Durulama', 'Hijyen+'];1
+Çamaşır Makinesi;Programs;"['Perde', 'Leke Programı', 'Bebek+', 'Yorgan', 'Havalandırma', 'Yünlü / Elde yıkama', 'DarkWash/Jeans', 'İndirilen Program', '15', 'Var', '0-24 Saat', 'Pamuklular', 'Eko 40-60', 'Sentetik', ""Hızlı 14'"", 'Sıkma Pompa', 'Durulama']";1
+Çamaşır Makinesi;Programs;"['Var', 'Var', '15', 'Pamuklu', 'Eco 40-60', 'Sentetik', ""Ekspres / Ekspres 14'"", 'Delicates/Wool/HandWash', 'Gömlek', 'Spin + Drain', 'Durulama', 'Pamuklu Kurutma', 'Sentetik Kurutma', '7 Kg Wash & Dry', 'Antialerjik+', 'Wash&Wear', 'Hygiene Therapy', 'ColdWash']";1
+Çamaşır Makinesi;Connection;;11
+Çamaşır Makinesi;Connection;Wi-Fi;8
+Çamaşır Makinesi;Connection;BLE;1
+Çamaşır Makinesi;Functions;;10
+Çamaşır Makinesi;Functions;['Kırışık Önleme Fonksiyonu'];9
+Çamaşır Makinesi;Functions;['Steam'];1
+Bulaşık Makinesi;Energy_Class;D;16
+Bulaşık Makinesi;Energy_Class;B;9
+Bulaşık Makinesi;Energy_Class;C;6
+Bulaşık Makinesi;Energy_Class;A;1
+Bulaşık Makinesi;Energy_Class;E;1
+Bulaşık Makinesi;Subcategory;Bulaşık Makinesi;33
+Bulaşık Makinesi;Product_Type;Solo;23
+Bulaşık Makinesi;Product_Type;Tezgah Altı Ankastre;6
+Bulaşık Makinesi;Product_Type;Tam Ankastre;3
+Bulaşık Makinesi;Product_Type;Yarı Ankastre;1
+Bulaşık Makinesi;Motor_Type;Standart;25
+Bulaşık Makinesi;Motor_Type;ProSmart® Inverter Motor Teknolojisi;8
+Bulaşık Makinesi;Programs;"[""Hızlı 49'"", '35-40-50-65-70', 'Hassas 40', '237']";6
+Bulaşık Makinesi;Programs;['Makine Yıkama', '35-50-65-70', '190 dk'];3
+Bulaşık Makinesi;Programs;['İndirilen Program', '35-50-65-70', 'InnerClean', '240'];3
+Bulaşık Makinesi;Programs;"['6', 'Var', ""Mini 30'"", '35-40-50-65-70', '240']";3
+Bulaşık Makinesi;Programs;"['6 Program+5 İndirilebilir Program', ""Mini 30'"", '35-40-50-65-70', 'Makine Yıkama', '236 dk']";2
+Bulaşık Makinesi;Programs;"['6 program', 'Var', ""Mini 30'"", '35-40-50-65-70', '240']";2
+Bulaşık Makinesi;Programs;['İndirilen Program', '35-50-65-70', 'InnerClean', '280'];1
+Bulaşık Makinesi;Programs;"[""Mini 30'"", '35-40-50-60-65-70', 'Makine Yıkama', '270']";1
+Bulaşık Makinesi;Programs;"['6 program', ""Mini 30'"", '35-40-50-65-70', '204']";1
+Bulaşık Makinesi;Programs;"[""Mini 30'"", '35-40-50-65-70', 'Makine Yıkama', '236 dk']";1
+Bulaşık Makinesi;Programs;['Hızlı 54', '35-50-70', '237'];1
+Bulaşık Makinesi;Programs;"['6 Program+5 İndirilebilir Program', ""Mini 30'"", '35-40-50-60-65-70', 'Makine Yıkama', '270']";1
+Bulaşık Makinesi;Programs;['6 Program+5 İndirilebilir Program', 'Var', 'Download Cycle', '35-40-50-65-70', 'Makine Yıkama', '275 dk'];1
+Bulaşık Makinesi;Programs;['Makine Yıkama', '35-50-65-70', '280'];1
+Bulaşık Makinesi;Programs;"[""Hızlı 58'"", '50-65-70', '280']";1
+Bulaşık Makinesi;Programs;"['5', ""Mini 30'"", '35-50-65-70', '205 dk']";1
+Bulaşık Makinesi;Programs;"['5 program', ""Mini 30'"", '35-40-50-65-70', '240']";1
+Bulaşık Makinesi;Programs;['5 Program+6 İndirilebilir Program', 'Yes / with Side Indicator', 'İndirilen Program', '35-40-50-65-70', 'SelfCare', '236 dk'];1
+Bulaşık Makinesi;Programs;['8', 'Var', 'Ön Yıkama', '35-40-50-65-70', '224'];1
+Bulaşık Makinesi;Programs;['4 Program', 'Optimum 65°C', '35-50-65-70', '280'];1
+Bulaşık Makinesi;Connection;Wi-Fi + BLE;17
+Bulaşık Makinesi;Connection;;16
+Bulaşık Makinesi;Functions;['HomeWhiz', 'HijyenMax (App)', 'Extra kurutma (App)', '30 dk ile 24 saate kadar'];6
+Bulaşık Makinesi;Functions;['HijyenMax', 'Ekstra Parlaklık/ Kurutma Fonksiyonu', 'Zaman Erteleme', 'Yarım Yük', 'Var', '30 dk ile 24 saate kadar'];5
+Bulaşık Makinesi;Functions;['HijyenMax', 'Ekstra Parlaklık/ Kurutma Fonksiyonu', 'Ekstra Durulama', 'Yarım Yük', 'Var', '30 dk ile 24 saate kadar'];5
+Bulaşık Makinesi;Functions;['HijyenMax', 'Ekstra Parlaklık/ Kurutma Fonksiyonu', 'Call Service', 'HomeWhiz', 'Var', '30 dk ile 24 saate kadar'];4
+Bulaşık Makinesi;Functions;['DeepWash', 'HijyenMax', 'Turbo Fonksiyonu', 'DeepWash', 'Download Cycle', 'Var', 'Var', '30 dk ile 24 saate kadar'];3
+Bulaşık Makinesi;Functions;['DeepWash', 'HijyenMax', 'MaxiDry', 'DeepWash', 'Download Cycle', 'Var', 'Var', '30 dk ile 24 saate kadar'];2
+Bulaşık Makinesi;Functions;['Yarım Yük'];1
+Bulaşık Makinesi;Functions;['DeepWash', 'Steam Gloss', 'DeepWash', 'Turbo Fonksiyonu', 'Call Service', 'Var', 'Var', 'Var', '30 dk ile 24 saate kadar'];1
+Bulaşık Makinesi;Functions;['Var', 'Yarım Yük', 'Zaman erteleme', '3, 6 veya 9 Saat'];1
+Bulaşık Makinesi;Functions;['Var', 'Yarım Yük', 'Ekstra Durulama', '3, 6 veya 9 Saat'];1
+Bulaşık Makinesi;Functions;['HijyenMax', 'SelfDry', '3, 6 veya 9 Saat'];1
+Bulaşık Makinesi;Functions;['DeepWash', 'Steam Gloss', 'DeepWash', 'Turbo Fonksiyonu', 'Yarım Yük', 'Var', 'Var', '30 dk ile 24 saate kadar'];1
+Bulaşık Makinesi;Functions;['DeepWash', 'Var', 'HijyenMax', 'Ekstra Parlaklık/ Kurutma Fonksiyonu', 'DeepWash', 'Turbo Fonksiyonu', 'Var', 'Var', '30 dk ile 24 saate kadar'];1
+Bulaşık Makinesi;Functions;['Var', 'Tablet Deterjan', 'Yarım Yük', '3, 6 veya 9 Saat'];1
+Bulaşık Makinesi;Screen_Type;LED;20
+Bulaşık Makinesi;Screen_Type;LCD;13
+Bulaşık Makinesi;Cutlery_Basket;Hareketli;32
+Bulaşık Makinesi;Cutlery_Basket;Standard Symphony PH;1
+Bulaşık Makinesi;Energy_Consumption;0.849 kWh;12
+Bulaşık Makinesi;Energy_Consumption;0.645 kWh;6
+Bulaşık Makinesi;Energy_Consumption;0.836 kWh;4
+Bulaşık Makinesi;Energy_Consumption;0.768 kWh;4
+Bulaşık Makinesi;Energy_Consumption;0.654 kWh;2
+Bulaşık Makinesi;Energy_Consumption;0.747 kWh;2
+Bulaşık Makinesi;Energy_Consumption;0.551 kWh;1
+Bulaşık Makinesi;Energy_Consumption;0.746 kWh;1
+Bulaşık Makinesi;Energy_Consumption;0.937 kWh;1
+Bulaşık Makinesi;Water_Safety_System;Taşma Emniyeti;30
+Bulaşık Makinesi;Water_Safety_System;Taşma Emniyeti+;3
+Bulaşık Makinesi;Under_Counter_Height;;23
+Bulaşık Makinesi;Under_Counter_Height;82-87 cm;9
+Bulaşık Makinesi;Under_Counter_Height;82-92 cm;1
+Kurutma Makinesi;Energy_Class;;13
+Kurutma Makinesi;Energy_Class;D;7
+Kurutma Makinesi;Energy_Class;E;6
+Kurutma Makinesi;Energy_Class;C;1
+Kurutma Makinesi;Energy_Class;A;1
+Kurutma Makinesi;Subcategory;Kurutma Makinesi;28
+Kurutma Makinesi;Motor_Type;;15
+Kurutma Makinesi;Motor_Type;BLDC motor;7
+Kurutma Makinesi;Motor_Type;AC MOTOR;3
+Kurutma Makinesi;Motor_Type;DC Motor;2
+Kurutma Makinesi;Motor_Type;DC;1
+Kurutma Makinesi;Drum_Pattern;Aquawave;14
+Kurutma Makinesi;Drum_Pattern;;14
+Kurutma Makinesi;Programs;;13
+Kurutma Makinesi;Programs;"['Var', 'Var', '15 Programlı', 'Pamuklular', 'Pamuklu Ekonomik Kurutma', 'Sentetik', 'Karma', 'Havlu', 'Açık Hava/Spor (Goretex)', 'Tazeleme', 'Zaman Programları', 'Narin', 'Yorgan', 'Yorgan/ Nevresim', 'Kot', 'Gömlek', 'Hijyenik Kurutma', ""Ekspres 30'""]";4
+Kurutma Makinesi;Programs;"['Var', 'Var', '15 Programlı', 'Pamuklular', 'Pamuklu Ekonomik Kurutma', 'Sentetik', 'Kot', ""Ekspres 30'"", 'Yorgan/ Nevresim', 'Açık Hava/Spor (Goretex)', 'Zaman Programları', 'Hijyenik Havalandırma', 'Hijyenik Kurutma', 'Havlu', 'Yorgan', 'Karma', 'Buharlı Tazeleme', 'Giyime Hazır (Gömlek)']";2
+Kurutma Makinesi;Programs;"['Var', 'Var', '15 Programlı', 'Pamuklular', 'Pamuklu Ekonomik Kurutma', 'Sentetik', 'Havlu', 'Yorgan/ Nevresim', 'Açık Hava/Spor (Goretex)', 'İndirilen Program', 'Zaman Programları', 'Hijyenik Havalandırma', 'Hijyenik Kurutma', ""Ekspres 30'"", 'Kot', 'Karma', 'Buharlı Tazeleme', 'Giyime Hazır (Gömlek)']";2
+Kurutma Makinesi;Programs;['Var', 'Var', '15 Programlı', 'Pamuklular', 'Pamuklu Ekonomik Kurutma', 'Sentetik', 'Havlu', 'Narin', 'Yorgan/ Nevresim', 'İndirilen Program', 'Zaman Programları', 'Hijyenik Havalandırma', 'Hijyenik Kurutma', 'Gömlek', 'Açık Hava/Spor (Goretex)', 'Kot', 'Karma', '5 kg @ 1 saat'];1
+Kurutma Makinesi;Programs;['C'];1
+Kurutma Makinesi;Programs;"['Var', 'Var', '15 Programlı', 'Pamuklular', 'Pamuklu Ekonomik Kurutma', 'Sentetik', 'Karma', 'Yünlü Kurutma', 'Sessiz', 'Narin', 'Zaman Programları', 'Kot', 'Açık Hava/Spor (Goretex)', 'Yorgan/ Nevresim', 'Gömlek', ""Ekspres 30'"", 'Hijyenik Kurutma', 'Hijyenik Havalandırma']";1
+Kurutma Makinesi;Programs;"['Var', 'Var', '15 Programlı', 'Pamuklular', 'Pamuklu Ekonomik Kurutma', 'Sentetik', 'Karma', 'Havlu', 'Açık Hava/Spor (Goretex)', 'Tazeleme', 'Zaman Programları', 'Narin', 'Yorgan', 'Kot', 'Gömlek', 'Hijyenik Kurutma', ""Ekspres 30'""]";1
+Kurutma Makinesi;Programs;"['Var', 'Var', '15 Programlı', 'Pamuklular', 'Pamuklu Ekonomik Kurutma', 'Sentetik', 'Yünlü Kurutma', 'Sessiz', 'Yorgan/ Nevresim', 'İndirilen Program', 'Zaman Programları', 'Hijyenik Havalandırma', 'Hijyenik Kurutma', ""Ekspres 30'"", 'Kot', 'Karma', 'Buharlı Tazeleme', 'Giyime Hazır (Gömlek)']";1
+Kurutma Makinesi;Programs;"['Var', 'Var', '15 Programlı', 'Pamuklular', 'Pamuklu Ekonomik Kurutma', 'Sentetik', 'Karma', 'Yünlü Kurutma', 'Sessiz', 'İndirilen Program', 'Zaman Programları', 'Kot', 'Açık Hava/Spor (Goretex)', 'Yorgan/ Nevresim', 'Narin', ""Ekspres 30'"", 'Hijyenik Kurutma', 'Hijyenik Havalandırma']";1
+Kurutma Makinesi;Programs;"['Var', 'Var', '15 Programlı', 'Pamuklular', 'Pamuklu Ekonomik Kurutma', 'Sentetik', 'Yünlü Kurutma', 'Sessiz', 'Yorgan/ Nevresim', 'İndirilen Program', 'Zaman Programları', 'Hijyenik Havalandırma', 'Hijyenik Kurutma', ""Xpress Super Short 50'"", 'Kot', 'Karma', 'Buharlı Tazeleme', 'Giyime Hazır (Gömlek)']";1
+Kurutma Makinesi;Connection;;21
+Kurutma Makinesi;Connection;Wi-Fi;7
+Kurutma Makinesi;Functions;['Var'];14
+Kurutma Makinesi;Functions;;14
+Kurutma Makinesi;Practical_Filter;;15
+Kurutma Makinesi;Practical_Filter;1;12
+Kurutma Makinesi;Practical_Filter;Lint Guard;1
+Kurutma Makinesi;Heat_Pump_Drying_Technology;;14
+Kurutma Makinesi;Heat_Pump_Drying_Technology;Isı Pompalı;13
+Kurutma Makinesi;Heat_Pump_Drying_Technology;Hybrid 2.0;1
+Kurutma Makinesi;Smart_Humidity_Sensor;;14
+Kurutma Makinesi;Smart_Humidity_Sensor;Akıllı Nem Sensörü;10
+Kurutma Makinesi;Smart_Humidity_Sensor;Eco Sense;4
+Kurutma Makinesi;Cable_Length.1;;25
+Kurutma Makinesi;Cable_Length.1;3;1
+Kurutma Makinesi;Cable_Length.1;10;1
+Kurutma Makinesi;Cable_Length.1;2;1
+Kurutma Makinesi;Speed_Setting;;15
+Kurutma Makinesi;Speed_Setting;2 Adet;8
+Kurutma Makinesi;Speed_Setting;3 Adet;5
+Kurutma Makinesi;Caring_Coating;;17
+Kurutma Makinesi;Caring_Coating;Seramik;10
+Kurutma Makinesi;Caring_Coating;Seramik+Makademya Yağı+Hindistan Cevizi Yağı;1
+Fırın;Energy_Class;A;23
+Fırın;Energy_Class;;12
+Fırın;Energy_Class;A+;7
+Fırın;Energy_Class;En verimli enerjii seviyesi;2
+Fırın;Subcategory;Fırın;44
+Fırın;Product_Type;;35
+Fırın;Product_Type;Solo;9
+Fırın;Connection;;38
+Fırın;Connection;Wi-Fi + BLE;6
+Fırın;Functions;['Var', 'Var', 'Var', '6'];10
+Fırın;Functions;;6
+Fırın;Functions;['Var', 'Var', 'Var', '8'];5
+Fırın;Functions;['Var', 'Var', 'Var', '9'];4
+Fırın;Functions;['Var', 'Var', 'Var', '7'];3
+Fırın;Functions;['Var', 'Var', 'Simple Steam Cleaning', 'Var', '15'];3
+Fırın;Functions;['Var', 'Var', 'Var', 'Var', '8'];2
+Fırın;Functions;['8'];2
+Fırın;Functions;['Var', 'Var', 'Var', 'Var', '9'];2
+Fırın;Functions;['6', 'Var', 'Var'];1
+Fırın;Functions;['7', 'Var'];1
+Fırın;Functions;['6', 'Var'];1
+Fırın;Functions;['9'];1
+Fırın;Functions;['Var', '4'];1
+Fırın;Functions;['Var', 'Var', '6'];1
+Fırın;Functions;['Var', 'Var', '8'];1
+Fırın;Clock_Type;LED Display - Touchcontrol Prologue/Beyond-Good+ (Beast);18
+Fırın;Clock_Type;;17
+Fırın;Clock_Type;Mekanik Programlanabilir Saat;6
+Fırın;Clock_Type;LED Ekran;2
+Fırın;Clock_Type;LED Display - Touch Control Core UI Beko;1
+Fırın;Steam_Cooking;0;18
+Fırın;Steam_Cooking;;12
+Fırın;Steam_Cooking;SteamAssisted Buhar Destekli Pişirme;6
+Fırın;Steam_Cooking;SteamAdd Buhar Destekli Pişirme;5
+Fırın;Steam_Cooking;SteamAid Otomatik Buhar Destekli Pişirme;3
+Fırın;Hob_Surface;;38
+Fırın;Hob_Surface;Metal;6
+Fırın;Coffee_Burner_Adapter;;38
+Fırın;Coffee_Burner_Adapter;Emaye;5
+Fırın;Coffee_Burner_Adapter;Siyah Emaye;1
+Fırın;Steam_Assisted_Cooking;;33
+Fırın;Steam_Assisted_Cooking;1;9
+Fırın;Steam_Assisted_Cooking;Buhar jeneratörlü, otomatik buhar destekli pişirme;2
+Set Üstü Ocak;Subcategory;Set Üstü Ocak;12
+Set Üstü Ocak;Product_Type;Solo;12
+Set Üstü Ocak;Hob_Surface;Cam;6
+Set Üstü Ocak;Hob_Surface;Paslanmaz Çelik;3
+Set Üstü Ocak;Hob_Surface;Metal;3
+Set Üstü Ocak;Coffee_Burner_Adapter;Siyah Emaye;10
+Set Üstü Ocak;Coffee_Burner_Adapter;;2
+Set Üstü Ocak;Hob_Type_and_Number_of_Burners;4 Gözü Gazlı;9
+Set Üstü Ocak;Hob_Type_and_Number_of_Burners;4 Gözü Gazlı (1'i WOK);1
+Set Üstü Ocak;Hob_Type_and_Number_of_Burners;2 Gözü Elektrikli;1
+Set Üstü Ocak;Hob_Type_and_Number_of_Burners;4 Gözü Elektrikli;1
+Set Üstü Ocak;Hob_Type;Gazlı Ocak;10
+Set Üstü Ocak;Hob_Type;Elektrikli Ocak;2
+Set Üstü Ocak;Burner_Cap_Type;Düz Parlak;6
+Set Üstü Ocak;Burner_Cap_Type;Formlu Parlak;4
+Set Üstü Ocak;Burner_Cap_Type;;2
+Set Üstü Ocak;Control_Type_and_Position;Düğmeden Kontrol / Yan;11
+Set Üstü Ocak;Control_Type_and_Position;Düğmeden Kontrol / Ön;1
+Set Üstü Ocak;Front_Left_Zone;2,9 kW;9
+Set Üstü Ocak;Front_Left_Zone;4 kW;1
+Set Üstü Ocak;Front_Left_Zone;;1
+Set Üstü Ocak;Front_Left_Zone;Ø180mm - 1500W;1
+Set Üstü Ocak;Rear_Right_Zone;1,75 kW;6
+Set Üstü Ocak;Rear_Right_Zone;2 kW;4
+Set Üstü Ocak;Rear_Right_Zone;;1
+Set Üstü Ocak;Rear_Right_Zone;Ø180mm - 1500W;1
+Set Üstü Ocak;Pan_Support_Type;Parlak Emaye;4
+Set Üstü Ocak;Pan_Support_Type;Yeni Tekli - Emaye (Parlak);3
+Set Üstü Ocak;Pan_Support_Type;Tekli - Emaye (Parlak);3
+Set Üstü Ocak;Pan_Support_Type;;2
+Set Üstü Ocak;Frame;İnoks Çerçeve;6
+Set Üstü Ocak;Frame;;5
+Set Üstü Ocak;Frame;Çerçevesiz;1
+Set Üstü Ocak;Front_Right_Zone;1 kW;10
+Set Üstü Ocak;Front_Right_Zone;;1
+Set Üstü Ocak;Front_Right_Zone;Ø145mm - 1000W;1
+Set Üstü Ocak;Rear_Left_Zone;1,75 kW;6
+Set Üstü Ocak;Rear_Left_Zone;2 kW;4
+Set Üstü Ocak;Rear_Left_Zone;;1
+Set Üstü Ocak;Rear_Left_Zone;Ø145mm - 1000W;1
+Ankastre Mikrodalgalar;Subcategory;Ankastre Mikrodalgalar;7
+Ankastre Mikrodalgalar;Product_Type;Ankastre;6
+Ankastre Mikrodalgalar;Product_Type;;1
+Ankastre Mikrodalgalar;Functions;['8'];3
+Ankastre Mikrodalgalar;Functions;['9'];3
+Ankastre Mikrodalgalar;Functions;;1
+Pişirici;Subcategory;Pişirici;25
+Pişirici;Programs;;17
+Pişirici;Programs;['9'];3
+Pişirici;Programs;['8'];2
+Pişirici;Programs;['10'];2
+Pişirici;Programs;['4'];1
+Pişirici;Functions;;18
+Pişirici;Functions;['Var'];3
+Pişirici;Functions;['Var', 'Var', 'Var', 'Var', 'Var', 'Var', 'Var', 'Var', 'Var', 'Var'];2
+Pişirici;Functions;['Evet', 'Yavaş Pişirme, Güveç, Sote, Poşe, Sıcak Tutma, Yeniden Isıtma, Haşlama, Buharda Pişirme, Yoğurt, Tarhana, Smoothie, Reçel', 'Dilimleme, Parçalama, Rendeleme, Püre, Yoğurma, Çırpma, Hamur Kabartma, Harmanlama, Karıştırma, Pizza Hamuru'];1
+Pişirici;Functions;['Var', '7'];1
+Pişirici;Inner_Chamber_Material;;16
+Pişirici;Inner_Chamber_Material;Yapışmaz Kaplama;8
+Pişirici;Inner_Chamber_Material;Paslanmaz Çelik;1
+Pişirici;Cooking_Surface;;15
+Pişirici;Cooking_Surface;Aşınmaya karşı 7 kata kadar daha dayanıklı Quantech plakalar;6
+Pişirici;Cooking_Surface;Yanmaz yapışmaz kaplama;1
+Pişirici;Cooking_Surface;Aşınmaya karşı 7 kata kadar daha dayanıklı Armor plakalar;1
+Pişirici;Cooking_Surface;Granit;1
+Pişirici;Cooking_Surface;Döküm Üzeri Seramik Kaplama;1
+Pişirici;Plate_Usage;;15
+Pişirici;Plate_Usage;Çift Yönlü;5
+Pişirici;Plate_Usage;Tek Yönlü;5
+Pişirici;Body_Material;;18
+Pişirici;Body_Material;Plastik;7
+Pişirici;Basket;;18
+Pişirici;Basket;Metal, Tutma Saplı;5
+Pişirici;Basket;Detachable frying basket;2
+Pişirici;Chopper_Bowl_Material;;24
+Pişirici;Chopper_Bowl_Material;Metal;1
+Su Sebili;Subcategory;Su Sebili;6
+Su Sebili;Product_Type;Tam Boy Su Pınarı;6
+Su Sebili;Carboy_Placement;Gizli Damacanalı;4
+Su Sebili;Carboy_Placement;Üstten Yüklemeli;2
+Su Sebili;Faucet;Soğuk - Ortam;4
+Su Sebili;Faucet;Soğuk - Sıcak;1
+Su Sebili;Faucet;Soğuk - Ortam - Sıcak;1
+Su Sebili;Cold_Water_Temperature_Range;5-10 C;5
+Su Sebili;Cold_Water_Temperature_Range;≤10 C;1
+Su Sebili;Cooling_Capacity_(lt/hour);2.5 L/h;4
+Su Sebili;Cooling_Capacity_(lt/hour);2 L/h;2
+Beyaz Eşya Yedek Parça ve Aksesuarları;Subcategory;Beyaz Eşya Yedek Parça ve Aksesuarları;12
+Ankastre Ocaklar;Energy_Class;;38
+Ankastre Ocaklar;Energy_Class;A;2
+Ankastre Ocaklar;Subcategory;Ankastre Ocaklar;40
+Ankastre Ocaklar;Product_Type;Ankastre;40
+Ankastre Ocaklar;Programs;;35
+Ankastre Ocaklar;Programs;['Var'];5
+Ankastre Ocaklar;Functions;;36
+Ankastre Ocaklar;Functions;['Var'];4
+Ankastre Ocaklar;Hob_Surface;Cam;34
+Ankastre Ocaklar;Hob_Surface;Paslanmaz Çelik;4
+Ankastre Ocaklar;Hob_Surface;Metal;2
+Ankastre Ocaklar;Coffee_Burner_Adapter;;26
+Ankastre Ocaklar;Coffee_Burner_Adapter;Siyah Emaye;14
+Ankastre Ocaklar;Hob_Type_and_Number_of_Burners;4 Gözü Gazlı;17
+Ankastre Ocaklar;Hob_Type_and_Number_of_Burners;4 Gözü Gazlı (1'i WOK);11
+Ankastre Ocaklar;Hob_Type_and_Number_of_Burners;5 Gözü Gazlı (1'i WOK);5
+Ankastre Ocaklar;Hob_Type_and_Number_of_Burners;4 Induction with 2 Flexizone;2
+Ankastre Ocaklar;Hob_Type_and_Number_of_Burners;4 Gözü İndüksiyon (1 Flexi Bölme);2
+Ankastre Ocaklar;Hob_Type_and_Number_of_Burners;4 Gözü Vitroseramik;1
+Ankastre Ocaklar;Hob_Type_and_Number_of_Burners;2 Gözü Vitroseramik;1
+Ankastre Ocaklar;Hob_Type_and_Number_of_Burners;4 Gözü İndüksiyon;1
+Ankastre Ocaklar;Hob_Type;Gazlı Ocak;33
+Ankastre Ocaklar;Hob_Type;İndüksiyonlu Ocak;5
+Ankastre Ocaklar;Hob_Type;Vitroseramik Ocak;2
+Ankastre Ocaklar;Burner_Cap_Type;Düz Mat;14
+Ankastre Ocaklar;Burner_Cap_Type;Düz Parlak;13
+Ankastre Ocaklar;Burner_Cap_Type;;7
+Ankastre Ocaklar;Burner_Cap_Type;Formlu Parlak;6
+Ankastre Ocaklar;Control_Type_and_Position;Düğmeden Kontrol / Yan;25
+Ankastre Ocaklar;Control_Type_and_Position;Düğmeden Kontrol / Ön;9
+Ankastre Ocaklar;Control_Type_and_Position;Dokunmatik Kontrol / Ön;5
+Ankastre Ocaklar;Control_Type_and_Position;Dokunmatik Kontrol / Sağ Ön;1
+Ankastre Ocaklar;Front_Left_Zone;2,9 kW;16
+Ankastre Ocaklar;Front_Left_Zone;3,3 kW;9
+Ankastre Ocaklar;Front_Left_Zone;1 kW;4
+Ankastre Ocaklar;Front_Left_Zone;180mmx200mm - 2200/3100W ( Max/Boost );3
+Ankastre Ocaklar;Front_Left_Zone;;3
+Ankastre Ocaklar;Front_Left_Zone;Ø210mm - 2300W;1
+Ankastre Ocaklar;Front_Left_Zone;4 kW;1
+Ankastre Ocaklar;Front_Left_Zone;1,75 kW;1
+Ankastre Ocaklar;Front_Left_Zone;Ø180mm - 1800W;1
+Ankastre Ocaklar;Front_Left_Zone;210 x 210mm – 2400/3700W (Max/Boost);1
+Ankastre Ocaklar;Rear_Right_Zone;1,75 kW;26
+Ankastre Ocaklar;Rear_Right_Zone;2 kW;5
+Ankastre Ocaklar;Rear_Right_Zone;180mmx200mm - 2200/3100W ( Max/Boost );2
+Ankastre Ocaklar;Rear_Right_Zone;;2
+Ankastre Ocaklar;Rear_Right_Zone;Ø180 mm - 1800W;1
+Ankastre Ocaklar;Rear_Right_Zone;Ø210 mm - 2400/3700W ( Max/Boost );1
+Ankastre Ocaklar;Rear_Right_Zone;Ø180mm - 1800W;1
+Ankastre Ocaklar;Rear_Right_Zone;Ø180 mm - 2200/3100W (Max/Boost);1
+Ankastre Ocaklar;Rear_Right_Zone;3 kW;1
+Ankastre Ocaklar;Pan_Support_Type;;15
+Ankastre Ocaklar;Pan_Support_Type;Yeni Tekli - Emaye (Parlak);9
+Ankastre Ocaklar;Pan_Support_Type;Döküm;4
+Ankastre Ocaklar;Pan_Support_Type;Parlak Emaye;4
+Ankastre Ocaklar;Pan_Support_Type;Tekli - Emaye Parlak (Beyond-Square);3
+Ankastre Ocaklar;Pan_Support_Type;Tekli - Döküm (Beyond-Kare);3
+Ankastre Ocaklar;Pan_Support_Type;Tekli - Döküm;1
+Ankastre Ocaklar;Pan_Support_Type;Tekli - Döküm Yıkanabilir (Beyond-Square);1
+Ankastre Ocaklar;Frame;;22
+Ankastre Ocaklar;Frame;Çerçevesiz;17
+Ankastre Ocaklar;Frame;Dark Inox;1
+Ankastre Ocaklar;Front_Right_Zone;1 kW;28
+Ankastre Ocaklar;Front_Right_Zone;1,75 kW;4
+Ankastre Ocaklar;Front_Right_Zone;180mmx200mm - 2200/3100W ( Max/Boost );2
+Ankastre Ocaklar;Front_Right_Zone;;2
+Ankastre Ocaklar;Front_Right_Zone;Ø160mm - 1500W;1
+Ankastre Ocaklar;Front_Right_Zone;Ø145mm - 1500/2200W (Max/Boost);1
+Ankastre Ocaklar;Front_Right_Zone;Ø145mm - 1400W;1
+Ankastre Ocaklar;Front_Right_Zone;Ø145mm - 1500/2500W (Max/Boost);1
+Ankastre Ocaklar;Rear_Left_Zone;1,75 kW;21
+Ankastre Ocaklar;Rear_Left_Zone;2,9 kW;5
+Ankastre Ocaklar;Rear_Left_Zone;2 kW;5
+Ankastre Ocaklar;Rear_Left_Zone;180mmx200mm - 2200/3100W ( Max/Boost );3
+Ankastre Ocaklar;Rear_Left_Zone;;3
+Ankastre Ocaklar;Rear_Left_Zone;Ø140mm - 1200W;1
+Ankastre Ocaklar;Rear_Left_Zone;Ø145mm - 1400W;1
+Ankastre Ocaklar;Rear_Left_Zone;210 x 210mm – 2400/3700W (Max/Boost);1
+Ankastre Davlumbazlar;Energy_Class;A;13
+Ankastre Davlumbazlar;Energy_Class;B;11
+Ankastre Davlumbazlar;Energy_Class;D;6
+Ankastre Davlumbazlar;Energy_Class;A++;3
+Ankastre Davlumbazlar;Energy_Class;C;1
+Ankastre Davlumbazlar;Energy_Class;A+;1
+Ankastre Davlumbazlar;Subcategory;Ankastre Davlumbazlar;35
+Ankastre Davlumbazlar;Motor_Type;Standart Motor;29
+Ankastre Davlumbazlar;Motor_Type;Prosmart Inverter;3
+Ankastre Davlumbazlar;Motor_Type;;1
+Ankastre Davlumbazlar;Motor_Type;Fırçasız Motor (Bolu - Best);1
+Ankastre Davlumbazlar;Motor_Type;Gölge Kutuplu Motor (Bolu-Good);1
+Ankastre Davlumbazlar;Functions;;21
+Ankastre Davlumbazlar;Functions;['NTC Sensör'];10
+Ankastre Davlumbazlar;Functions;['NTC & VOC Sensors'];4
+Ankastre Davlumbazlar;Intensive_Suction_Power_(m3/h);;18
+Ankastre Davlumbazlar;Intensive_Suction_Power_(m3/h);720 m³/h;10
+Ankastre Davlumbazlar;Intensive_Suction_Power_(m3/h);850 m³/h;3
+Ankastre Davlumbazlar;Intensive_Suction_Power_(m3/h);712 m³/h;2
+Ankastre Davlumbazlar;Intensive_Suction_Power_(m3/h);710 m³/h;1
+Ankastre Davlumbazlar;Intensive_Suction_Power_(m3/h);830 m³/h;1
+Ankastre Davlumbazlar;Hood_Type;Eğimli Davlumbazlar;21
+Ankastre Davlumbazlar;Hood_Type;;8
+Ankastre Davlumbazlar;Hood_Type;Piramit Davlumbazlar;4
+Ankastre Davlumbazlar;Hood_Type;T Tipi Camsız Davlumbazlar;2
+Ankastre Davlumbazlar;Maximum_Suction_Power;445 m³/h;10
+Ankastre Davlumbazlar;Maximum_Suction_Power;400 m³/h;8
+Ankastre Davlumbazlar;Maximum_Suction_Power;500 m³/h;4
+Ankastre Davlumbazlar;Maximum_Suction_Power;440 m³/h;3
+Ankastre Davlumbazlar;Maximum_Suction_Power;600 m³/h;3
+Ankastre Davlumbazlar;Maximum_Suction_Power;441 m³/h;2
+Ankastre Davlumbazlar;Maximum_Suction_Power;408 m³/h;1
+Ankastre Davlumbazlar;Maximum_Suction_Power;613 m³/h;1
+Ankastre Davlumbazlar;Maximum_Suction_Power;425 m³/h;1
+Ankastre Davlumbazlar;Maximum_Suction_Power;370 m³/h;1
+Ankastre Davlumbazlar;Maximum_Suction_Power;430 m³/h;1
+Ankastre Davlumbazlar;Installation_Height_(mm);91 - 113,8;27
+Ankastre Davlumbazlar;Installation_Height_(mm);65;4
+Ankastre Davlumbazlar;Installation_Height_(mm);73,5 - 102,5;3
+Ankastre Davlumbazlar;Installation_Height_(mm);45-60;1
+Ankastre Davlumbazlar;Control_Type;Elektronik - Dokunmatik;25
+Ankastre Davlumbazlar;Control_Type;Mekanik - Push Button;10
+Ankastre Davlumbazlar;Number_of_Speed_Levels;3;18
+Ankastre Davlumbazlar;Number_of_Speed_Levels;3+1 Yoğun Kademe;17
+Ankastre Davlumbazlar;Filter_Type;Alüminyum Kaset;15
+Ankastre Davlumbazlar;Filter_Type;Çelik Kaset;14
+Ankastre Davlumbazlar;Filter_Type;;5
+Ankastre Davlumbazlar;Filter_Type;Black Metal – Casette;1
+Ankastre Davlumbazlar;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);44-...-60-70;10
+Ankastre Davlumbazlar;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);43-...-56;5
+Ankastre Davlumbazlar;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);53 - 55 - 64 dBA;4
+Ankastre Davlumbazlar;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);38-...-59-74;3
+Ankastre Davlumbazlar;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);46-...-59;3
+Ankastre Davlumbazlar;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);50-...-69;3
+Ankastre Davlumbazlar;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);43-...-58-69;2
+Ankastre Davlumbazlar;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);48-...-68;1
+Ankastre Davlumbazlar;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);43-...-60-71;1
+Ankastre Davlumbazlar;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);44-...-60-74;1
+Ankastre Davlumbazlar;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);49-...-62;1
+Ankastre Davlumbazlar;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);53-..-64;1
+Ankastre Aspiratörler;Energy_Class;C;7
+Ankastre Aspiratörler;Energy_Class;D;4
+Ankastre Aspiratörler;Subcategory;Ankastre Aspiratörler;11
+Ankastre Aspiratörler;Motor_Type;Standart Motor;7
+Ankastre Aspiratörler;Motor_Type;;4
+Ankastre Aspiratörler;Hood_Type;;5
+Ankastre Aspiratörler;Hood_Type;Sürgülü Aspiratör;4
+Ankastre Aspiratörler;Hood_Type;Gömme Aspiratör;2
+Ankastre Aspiratörler;Maximum_Suction_Power;300 m³/h;7
+Ankastre Aspiratörler;Maximum_Suction_Power;381 m³/h;1
+Ankastre Aspiratörler;Maximum_Suction_Power;415 m³/h;1
+Ankastre Aspiratörler;Maximum_Suction_Power;358 m³/h;1
+Ankastre Aspiratörler;Maximum_Suction_Power;365 m³/h;1
+Ankastre Aspiratörler;Control_Type;Mekanik-rocker switch;7
+Ankastre Aspiratörler;Control_Type;Mekanik - Kayar Tip Kontrol;2
+Ankastre Aspiratörler;Control_Type;Mekanik - Push Button;2
+Ankastre Aspiratörler;Number_of_Speed_Levels;3;11
+Ankastre Aspiratörler;Filter_Type;Çelik Kaset;7
+Ankastre Aspiratörler;Filter_Type;Alüminyum Kaset;3
+Ankastre Aspiratörler;Filter_Type;;1
+Ankastre Aspiratörler;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);;6
+Ankastre Aspiratörler;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);52 - TBA - 62;2
+Ankastre Aspiratörler;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);50-...-64;1
+Ankastre Aspiratörler;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);49 - 52 - 61 dBA;1
+Ankastre Aspiratörler;Sound_Power_for_Each_Level_(acc_to_DIN/EN_60704-3);51 - 66 dBA;1
+Pişirici Yedek Parça ve Aksesuarları;Subcategory;Pişirici Yedek Parça ve Aksesuarları;2
+Bilgisayar;Subcategory;Bilgisayar;50
+Bilgisayar;Screen_Type;;32
+Bilgisayar;Screen_Type;FHD;18
+Bilgisayar;Processor_Type;;31
+Bilgisayar;Processor_Type;Intel Core i5;11
+Bilgisayar;Processor_Type;Intel Core İ7;5
+Bilgisayar;Processor_Type;Intel Core i3;2
+Bilgisayar;Processor_Type;Intel N100;1
+Bilgisayar;RAM_Specifications;;34
+Bilgisayar;RAM_Specifications;DDR5-4800;11
+Bilgisayar;RAM_Specifications;LPDDR5-5200;2
+Bilgisayar;RAM_Specifications;DDR4;1
+Bilgisayar;RAM_Specifications;LPDDR5-4800;1
+Bilgisayar;RAM_Specifications;LPDDR5x-7467;1
+Bilgisayar;Operating_System;Windows 11;18
+Bilgisayar;Operating_System;iPadOs 18;6
+Bilgisayar;Operating_System;;6
+Bilgisayar;Operating_System;Android 15.0;4
+Bilgisayar;Operating_System;Android;3
+Bilgisayar;Operating_System;Xiaomi HyperOS 2;3
+Bilgisayar;Operating_System;Android 14 veya Sonrası;2
+Bilgisayar;Operating_System;Android 15, Hyper OS2;2
+Bilgisayar;Operating_System;Android 14;2
+Bilgisayar;Operating_System;Android 14 ve üstü;2
+Bilgisayar;Operating_System;Android 15 or Later;1
+Bilgisayar;Operating_System;Android™ 14 or Later;1
+Bilgisayar;Processor_Specifications;;34
+Bilgisayar;Processor_Specifications;Intel Core i5-13420H, 8C (4P + 4E) / 12T, P-core 2.1 / 4.6GHz, E-core 1.5 / 3.4GHz, 12MB;3
+Bilgisayar;Processor_Specifications;Intel Core i5-12450HX, 8C (4P + 4E) / 12T, P-core up to 4.4GHz, E-core up to 3.1GHz, 12MB;3
+Bilgisayar;Processor_Specifications;Intel Core i7-13650HX, 14C (6P + 8E) / 20T, P-core 2.6 / 4.9GHz, E-core 1.9 / 3.6GHz, 24MB;2
+Bilgisayar;Processor_Specifications;Intel Core i7-13620H, 10C (6P + 4E) / 16T, P-core 2.4 / 4.9GHz, E-core 1.8 / 3.6GHz, 24MB;1
+Bilgisayar;Processor_Specifications;1334U;1
+Bilgisayar;Processor_Specifications;Intel N100 (4C / 4T, Max Turbo up to 3.4GHz, 6MB);1
+Bilgisayar;Processor_Specifications;Intel Core i5-12600HX, 12C (4P + 8E) / 16T, P-core up to 4.6GHz, E-core up to 3.3GHz, 18MB;1
+Bilgisayar;Processor_Specifications;Intel® Core i5-13420H, 8C (4P + 4E) / 12T, P-core up to 4.6GHz, E-core up to 3.4GHz, 12MB Intel Smart Cache;1
+Bilgisayar;Processor_Specifications;Intel Core i3-1315U, 6C (2P + 4E) / 8T, P-core up to 4.5GHz, E-core up to 3.3GHz, 10MB Intel Smart Cache;1
+Bilgisayar;Processor_Specifications;1315U;1
+Bilgisayar;Processor_Specifications;Intel Core Ultra 5 125H, 14C (4P + 8E + 2LPE) / 18T, Max Turbo up to 4.5GHz, 18MB;1
+Bilgisayar;Battery_Life;;34
+Bilgisayar;Battery_Life;12 saate kadar;7
+Bilgisayar;Battery_Life;12 saat'e kadar;4
+Bilgisayar;Battery_Life;7 saate kadar;3
+Bilgisayar;Battery_Life;3-cell Li-ion 42WHrs;1
+Bilgisayar;Battery_Life;8.Saate'e kadar;1
+Bilgisayar;Bluetooth;1;31
+Bilgisayar;Bluetooth;;15
+Bilgisayar;Bluetooth;Bluetooth 5.3;3
+Bilgisayar;Bluetooth;Bluetooth 5.2;1
+Bilgisayar;SSD_Specifications;;31
+Bilgisayar;SSD_Specifications;SSD M.2 2242 PCIe 4.0x4 NVMe;14
+Bilgisayar;SSD_Specifications;NVME SSD;3
+Bilgisayar;SSD_Specifications;UFS 3.1;1
+Bilgisayar;SSD_Specifications;SSD M.2 2280 PCIe 4.0x4 NVMe;1
+Bilgisayar;Graphics_Card_Specifications;;35
+Bilgisayar;Graphics_Card_Specifications;Integrated Intel UHD Graphics;7
+Bilgisayar;Graphics_Card_Specifications;Intel® UHD Graphics;3
+Bilgisayar;Graphics_Card_Specifications;NVIDIA GeForce RTX 4050 6GB GDDR6, Boost Clock 2370MHz, TGP 105W;2
+Bilgisayar;Graphics_Card_Specifications;NVIDIA GeForce RTX 4050 6GB GDDR6, Boost Clock 2370MHz, TGP 105W, 194 AI TOPS;1
+Bilgisayar;Graphics_Card_Specifications;NVIDIA GeForce RTX 4060 8GB GDDR6, Boost Clock 2370MHz, TGP 115W, 233 AI TOPS;1
+Bilgisayar;Graphics_Card_Specifications;Integrated Intel Arc Graphics;1
+Bilgisayar;Rear_Camera;;23
+Bilgisayar;Rear_Camera;8 MP;12
+Bilgisayar;Rear_Camera;13 MP;9
+Bilgisayar;Rear_Camera;12 MP;6
+Bilgisayar;Front_Camera;;23
+Bilgisayar;Front_Camera;12 MP;8
+Bilgisayar;Front_Camera;5 MP;6
+Bilgisayar;Front_Camera;8 MP;5
+Bilgisayar;Front_Camera;5MP;4
+Bilgisayar;Front_Camera;12MP Ultra Wide;3
+Bilgisayar;Front_Camera;2MP;1
+Bilgisayar;Accessories_(Additional_Hardware);;35
+Bilgisayar;Accessories_(Additional_Hardware);USB-C Şarj Kablosu (1 metre);6
+Bilgisayar;Accessories_(Additional_Hardware);S Pen;3
+Bilgisayar;Accessories_(Additional_Hardware);Pad Cover;3
+Bilgisayar;Accessories_(Additional_Hardware);Folio Case + Lenovo Tab Pen;1
+Bilgisayar;Accessories_(Additional_Hardware);Clear Case;1
+Bilgisayar;Accessories_(Additional_Hardware);Folio Case + Lenovo Tab Pen Plus;1
+Bilgisayar;Processor;;25
+Bilgisayar;Processor;A16 çip;6
+Bilgisayar;Processor;MediaTek MT8781;4
+Bilgisayar;Processor;8 çekirdek;3
+Bilgisayar;Processor;MediaTek Helio G100-Ultra;3
+Bilgisayar;Processor;Snapdragon 7+ Gen 3 Mobile Platform;2
+Bilgisayar;Processor;MediaTek Helio G85 (8C, 2x A75 @2.0GHz + 6x A55 @1.8GHz);2
+Bilgisayar;Processor;MediaTek Dimensity 9300+;2
+Bilgisayar;Processor;MediaTek Helio G99 (8C, 2x A76 @2.2GHz + 6x A55 @2.0GHz);1
+Bilgisayar;Processor;MediaTek Dimensity 6300 (8C, 2x A76 @2.4GHz + 6x A55@2.0GHz);1
+Bilgisayar;Processor;MediaTek Dimensity 8300 (8C, 1x A715 @3.35 GHz + 3x A715@3.2 GHz + 4x A510@2.2 GHz);1
+Bilgisayar;Screen_Resolution;;24
+Bilgisayar;Screen_Resolution;2360 x 1640;6
+Bilgisayar;Screen_Resolution;1920 x 1080;6
+Bilgisayar;Screen_Resolution;2560 x 1600;4
+Bilgisayar;Screen_Resolution;2304 x 1440;3
+Bilgisayar;Screen_Resolution;2136 x 3200;2
+Bilgisayar;Screen_Resolution;2000x1200;1
+Bilgisayar;Screen_Resolution;2560x1600;1
+Bilgisayar;Screen_Resolution;1920 x 1200;1
+Bilgisayar;Screen_Resolution;1340x800;1
+Bilgisayar;Screen_Resolution;2944x1840;1
+Bilgisayar;Micro_USB;;35
+Bilgisayar;Micro_USB;Type C;11
+Bilgisayar;Micro_USB;USB-C;4
+Bilgisayar;Speaker;;42
+Bilgisayar;Speaker;1;4
+Bilgisayar;Speaker;2 side speakers, optimized with Dolby Atmos®;2
+Bilgisayar;Speaker;4 speakers, optimized with Dolby Atmos®;1
+Bilgisayar;Speaker;4 JBL speakers, optimized with Dolby Atmos;1
+Hobi - Oyun (Gaming) Ürünleri;Subcategory;Hobi - Oyun (Gaming) Ürünleri;14
+Hobi - Oyun (Gaming) Ürünleri;Bluetooth;1;9
+Hobi - Oyun (Gaming) Ürünleri;Bluetooth;;5
+Hobi - Oyun (Gaming) Ürünleri;Processor;;9
+Hobi - Oyun (Gaming) Ürünleri;Processor;NVIDIA Custom Tegra processor;2
+Hobi - Oyun (Gaming) Ürünleri;Processor;3,6 GHz Hızında 8X Çekirdek (SMT ile 3,4 GHz) Özel Zen 2 CPU;2
+Hobi - Oyun (Gaming) Ürünleri;Processor;3,8 GHz Hızında 8X Çekirdek (SMT ile 3,66 GHz) Özel Zen 2 CPU;1
+Hobi - Oyun (Gaming) Ürünleri;Compatible_Platforms;PlayStation 5;5
+Hobi - Oyun (Gaming) Ürünleri;Compatible_Platforms;Switch;4
+Hobi - Oyun (Gaming) Ürünleri;Compatible_Platforms;Xbox One Oyun aksesuarları;3
+Hobi - Oyun (Gaming) Ürünleri;Compatible_Platforms;;2
+Hobi - Oyun (Gaming) Ürünleri;Connections;;7
+Hobi - Oyun (Gaming) Ürünleri;Connections;Güç bağlantı noktası, 1 adet HDMI 2.1, 3 adet USB 3.1, Kablosuz baglantı, Ethernet bağlantı noktası, Aksesuarlar radyosu;3
+Hobi - Oyun (Gaming) Ürünleri;Connections;HDMI;2
+Hobi - Oyun (Gaming) Ürünleri;Connections;Bluetooth, USB-C, HDMI;2
+Hobi Oyun Gaming Ürünleri;Subcategory;Hobi Oyun Gaming Ürünleri;3
+Ses& Görüntü Sistemleri;Subcategory;Ses& Görüntü Sistemleri;128
+Ses& Görüntü Sistemleri;Bluetooth;;68
+Ses& Görüntü Sistemleri;Bluetooth;1;58
+Ses& Görüntü Sistemleri;Bluetooth;Bluetooth 5.4;2
+Ses& Görüntü Sistemleri;Headphone_Type;;48
+Ses& Görüntü Sistemleri;Headphone_Type;Kablosuz kulak üstü kulaklık;19
+Ses& Görüntü Sistemleri;Headphone_Type;Kablosuz kulaküstü kulaklık;19
+Ses& Görüntü Sistemleri;Headphone_Type;Kablosuz Kulak İçi Kulaklık;15
+Ses& Görüntü Sistemleri;Headphone_Type;Kablolu Kulak Üstü Kulaklık;4
+Ses& Görüntü Sistemleri;Headphone_Type;Kablolu Kulak İçi Kulaklık;4
+Ses& Görüntü Sistemleri;Headphone_Type;Kablolu Kulaküstü Kulaklık;4
+Ses& Görüntü Sistemleri;Headphone_Type;Kablolu Kulakiçi Kulaklık;4
+Ses& Görüntü Sistemleri;Headphone_Type;Kablosuz Kulakiçi Kulaklık;3
+Ses& Görüntü Sistemleri;Headphone_Type;Kablosuz kulaklık;2
+Ses& Görüntü Sistemleri;Headphone_Type;Kablosuz;2
+Ses& Görüntü Sistemleri;Headphone_Type;Kablolu;1
+Ses& Görüntü Sistemleri;Headphone_Type;True Wireless Kulakiçi Kulaklık;1
+Ses& Görüntü Sistemleri;Headphone_Type;Kablosuz Kulak İci Kulaklık;1
+Ses& Görüntü Sistemleri;Headphone_Type;Kablosuz TWS Kulaklık;1
+Ses ve Görüntü Sistemleri;Subcategory;Ses ve Görüntü Sistemleri;1
+Ödeme Sistemleri;Subcategory;Ödeme Sistemleri;1
+Ödeme Sistemleri;Speaker;Buzzer;1
+Aksesuarlar;Subcategory;Aksesuarlar;4
+Cep Telefonu;Subcategory;Cep Telefonu;226
+Cep Telefonu;Screen_Type;Super Retina XDR Display;92
+Cep Telefonu;Screen_Type;;58
+Cep Telefonu;Screen_Type;Super AMOLED;30
+Cep Telefonu;Screen_Type;Dynamic AMOLED 2X;17
+Cep Telefonu;Screen_Type;AMOLED;15
+Cep Telefonu;Screen_Type;IPS LCD;9
+Cep Telefonu;Screen_Type;PLS LCD;3
+Cep Telefonu;Screen_Type;Dynamic AMOLED;1
+Cep Telefonu;Screen_Type;HD;1
+Cep Telefonu;Operating_System;iOS;92
+Cep Telefonu;Operating_System;Android;70
+Cep Telefonu;Operating_System;;63
+Cep Telefonu;Operating_System;Nucleus RTOS;1
+Cep Telefonu;Bluetooth;1;175
+Cep Telefonu;Bluetooth;;51
+Cep Telefonu;Rear_Camera;;137
+Cep Telefonu;Rear_Camera;48 MP;35
+Cep Telefonu;Rear_Camera;50MP+5MP+2MP;14
+Cep Telefonu;Rear_Camera;50 MP + 12 MP + 8 MP;7
+Cep Telefonu;Rear_Camera;50.0 MP + 10.0 MP + 12.0 MP;7
+Cep Telefonu;Rear_Camera;50MP+ 12 MP+ 5 MP;7
+Cep Telefonu;Rear_Camera;50MP+2MP;5
+Cep Telefonu;Rear_Camera;50 MP+8 MP+2 MP;4
+Cep Telefonu;Rear_Camera;50 MP + 8 MP + 5 MP;4
+Cep Telefonu;Rear_Camera;50MP;3
+Cep Telefonu;Rear_Camera;200MP +12MP +10MP +10MP;1
+Cep Telefonu;Rear_Camera;5 MP;1
+Cep Telefonu;Rear_Camera;50 MP + 12 MP;1
+Cep Telefonu;Front_Camera;12MP;77
+Cep Telefonu;Front_Camera;;65
+Cep Telefonu;Front_Camera;18 MP;35
+Cep Telefonu;Front_Camera;13 MP;21
+Cep Telefonu;Front_Camera;8 MP;12
+Cep Telefonu;Front_Camera;32MP;12
+Cep Telefonu;Front_Camera;16 MP;3
+Cep Telefonu;Front_Camera;10MP;1
+Cep Telefonu;Processor;;105
+Cep Telefonu;Processor;A18 Pro;19
+Cep Telefonu;Processor;A19 PRO;18
+Cep Telefonu;Processor;A18;14
+Cep Telefonu;Processor;EXYNOS 2400;12
+Cep Telefonu;Processor;A19;10
+Cep Telefonu;Processor;MediaTek Helio G99 (MT6789);9
+Cep Telefonu;Processor;A15 Bionic Chip;8
+Cep Telefonu;Processor;Exynos 1580;7
+Cep Telefonu;Processor;Samsung Exynos;6
+Cep Telefonu;Processor;Cortex A75;6
+Cep Telefonu;Processor;A16 Bionic Chip;4
+Cep Telefonu;Processor;Qualcomm | Snapdragon 6 Gen 3;4
+Cep Telefonu;Processor;Mediatek Dimensity 9300+ (4 nm);3
+Cep Telefonu;Processor;Mediatek MTK 6261A;1
+Cep Telefonu;Screen_Resolution;;115
+Cep Telefonu;Screen_Resolution;2340 x 1080;30
+Cep Telefonu;Screen_Resolution;1080 x 2400;18
+Cep Telefonu;Screen_Resolution;2556 x 1179;14
+Cep Telefonu;Screen_Resolution;2532x1170;13
+Cep Telefonu;Screen_Resolution;2796 x 1290;11
+Cep Telefonu;Screen_Resolution;3120x1440 -538 PPI;9
+Cep Telefonu;Screen_Resolution;720x1600 (HD+) Piksel;6
+Cep Telefonu;Screen_Resolution;1220 x 2712;6
+Cep Telefonu;Screen_Resolution;1600 x 720;3
+Cep Telefonu;Screen_Resolution;240 x 320;1
+Cep Telefonu;Camera_Zoom;Dijital;131
+Cep Telefonu;Camera_Zoom;;91
+Cep Telefonu;Camera_Zoom;3X OPTİK + 30X DIGITAL;4
+Cep Telefonu;Brand;APPLE;92
+Cep Telefonu;Brand;SAMSUNG;58
+Cep Telefonu;Brand;;51
+Cep Telefonu;Brand;Xiaomi;24
+Cep Telefonu;Brand;TCL;1
+Cep Telefonu;Product_Family;;160
+Cep Telefonu;Product_Family;Galaxy A;33
+Cep Telefonu;Product_Family;Galaxy S;24
+Cep Telefonu;Product_Family;13;7
+Cep Telefonu;Product_Family;14;1
+Cep Telefonu;Product_Family;Galaxy Z;1
+Cep Telefonu;Operating_System_Version;;154
+Cep Telefonu;Operating_System_Version;IOS 18;44
+Cep Telefonu;Operating_System_Version;Android 15;16
+Cep Telefonu;Operating_System_Version;iOS 15;7
+Cep Telefonu;Operating_System_Version;İOS 17;3
+Cep Telefonu;Operating_System_Version;İOS 16;1
+Cep Telefonu;Operating_System_Version;v3.0;1
+Cep Telefonu;Can_Charge_3_Devices_Simultaneously;;225
+Cep Telefonu;Can_Charge_3_Devices_Simultaneously;1;1
+Cep Telefonu;Compatible_Models_(MPA);;219
+Cep Telefonu;Compatible_Models_(MPA);Akıllı telefonlar ve daha fazlası için;2
+Cep Telefonu;Compatible_Models_(MPA);Tüm mobil cihazlar ile uyumlu akıllı çip;2
+Cep Telefonu;Compatible_Models_(MPA);iPhone 12 mini;1
+Cep Telefonu;Compatible_Models_(MPA);iPhone 12 Pro Max;1
+Cep Telefonu;Compatible_Models_(MPA);USB-C uyumlu tüm modeller için;1
+Cep Telefonu;Current_Protection_for_Safe_Charging;;221
+Cep Telefonu;Current_Protection_for_Safe_Charging;1;4
+Cep Telefonu;Current_Protection_for_Safe_Charging;MultiProtect;1
+Cep Telefonu;Cable_Type;;223
+Cep Telefonu;Cable_Type;Type­C ve Micro USB kabloları;1
+Cep Telefonu;Cable_Type;Type-C veya Micro USB kabloları ile şarj edilebilir;1
+Cep Telefonu;Cable_Type;120cm TypeC-USB kablosu,USB-A;1
+Cep Telefonu;Cable_Length;;225
+Cep Telefonu;Cable_Length;0.2 m;1
+Cep Telefonu Aksesuarları;Subcategory;Cep Telefonu Aksesuarları;28
+Cep Telefonu Aksesuarları;Can_Charge_3_Devices_Simultaneously;;20
+Cep Telefonu Aksesuarları;Can_Charge_3_Devices_Simultaneously;1;6
+Cep Telefonu Aksesuarları;Can_Charge_3_Devices_Simultaneously;5 cihazı aynı anda şarj edebilme;1
+Cep Telefonu Aksesuarları;Can_Charge_3_Devices_Simultaneously;Üç cihazı aynı anda şarj eder;1
+Cep Telefonu Aksesuarları;Compatible_Models_(MPA);;14
+Cep Telefonu Aksesuarları;Compatible_Models_(MPA);Tüm Modeller;6
+Cep Telefonu Aksesuarları;Compatible_Models_(MPA);Kablosuz şarj edilebilen akıllı cihazlar için;3
+Cep Telefonu Aksesuarları;Compatible_Models_(MPA);Lightining;2
+Cep Telefonu Aksesuarları;Compatible_Models_(MPA);USB-A ve USB-C uyumlu tüm modeller için;1
+Cep Telefonu Aksesuarları;Compatible_Models_(MPA);IP 13/13PRO/14/16e;1
+Cep Telefonu Aksesuarları;Compatible_Models_(MPA);Akıllı telefonlar ve daha fazlası için;1
+Cep Telefonu Aksesuarları;Current_Protection_for_Safe_Charging;;21
+Cep Telefonu Aksesuarları;Current_Protection_for_Safe_Charging;1;7
+Cep Telefonu Aksesuarları;Cable_Type;;16
+Cep Telefonu Aksesuarları;Cable_Type;USB Type-C;4
+Cep Telefonu Aksesuarları;Cable_Type;Kablosuz;2
+Cep Telefonu Aksesuarları;Cable_Type;Usb-A/Type-C;2
+Cep Telefonu Aksesuarları;Cable_Type;Usb-a / Micro usb;1
+Cep Telefonu Aksesuarları;Cable_Type;100 cm USB-C Kablo;1
+Cep Telefonu Aksesuarları;Cable_Type;Usb-c / Usb-c;1
+Cep Telefonu Aksesuarları;Cable_Type;USB-C/A Tek Daptör;1
+Cep Telefonu Aksesuarları;Cable_Length;;17
+Cep Telefonu Aksesuarları;Cable_Length;1 m;3
+Cep Telefonu Aksesuarları;Cable_Length;0.5 m;2
+Cep Telefonu Aksesuarları;Cable_Length;100 m;1
+Cep Telefonu Aksesuarları;Cable_Length;0.9 m;1
+Cep Telefonu Aksesuarları;Cable_Length;1.2 m;1
+Cep Telefonu Aksesuarları;Cable_Length;30 m;1
+Cep Telefonu Aksesuarları;Cable_Length;0.22 m;1
+Cep Telefonu Aksesuarları;Cable_Length;0.2 m;1
+Giyilebilir Teknoloji;Subcategory;Giyilebilir Teknoloji;89
+Giyilebilir Teknoloji;Waterproof;;34
+Giyilebilir Teknoloji;Waterproof;50 metreye kadar suya dayanıklıdır.;23
+Giyilebilir Teknoloji;Waterproof;50 metreye kadar su geçirmezlik.;18
+Giyilebilir Teknoloji;Waterproof;ISO 22810:2010 standardı kapsamında 50 metre suya dayanıklılık;10
+Giyilebilir Teknoloji;Waterproof;50m suya dayanıklı;2
+Giyilebilir Teknoloji;Waterproof;IP65 seviyesinde suya ve toza dayanıklı;1
+Giyilebilir Teknoloji;Waterproof;100 metreye kadar suya dayanıklıdır.;1
+Klima;Energy_Class;A++;21
+Klima;Energy_Class;;2
+Klima;Energy_Class;A;1
+Klima;Energy_Class;A+;1
+Klima;Energy_Class;A+++;1
+Klima;Subcategory;Klima;26
+Klima;Programs;['24 Saat'];20
+Klima;Programs;['7 Saat'];5
+Klima;Programs;;1
+Klima;Cooling_Capacity;12000 Btu/h;6
+Klima;Cooling_Capacity;9000 Btu/h;4
+Klima;Cooling_Capacity;24000 Btu/h;4
+Klima;Cooling_Capacity;18000 Btu/h;3
+Klima;Cooling_Capacity;15000 Btu/h;2
+Klima;Cooling_Capacity;48000 BTU/h;1
+Klima;Cooling_Capacity;11680 BTU/h;1
+Klima;Cooling_Capacity;33779 BTU/h;1
+Klima;Cooling_Capacity;26000 BTU/h;1
+Klima;Cooling_Capacity;55000 BTU/h;1
+Klima;Cooling_Capacity;21000 Btu/h;1
+Klima;Cooling_Capacity;7000 Btu/h;1
+Klima;Voltage;220-240;26
+Klima;Heating_Energy_Efficiency_Ratio_(W/W);;9
+Klima;Heating_Energy_Efficiency_Ratio_(W/W);3,3;5
+Klima;Heating_Energy_Efficiency_Ratio_(W/W);3,61;3
+Klima;Heating_Energy_Efficiency_Ratio_(W/W);4,12;3
+Klima;Heating_Energy_Efficiency_Ratio_(W/W);3,28;1
+Klima;Heating_Energy_Efficiency_Ratio_(W/W);3,71;1
+Klima;Heating_Energy_Efficiency_Ratio_(W/W);3,92;1
+Klima;Heating_Energy_Efficiency_Ratio_(W/W);2,45;1
+Klima;Heating_Energy_Efficiency_Ratio_(W/W);3,81;1
+Klima;Heating_Energy_Efficiency_Ratio_(W/W);3.06;1
+Klima;Refrigerant;R32;25
+Klima;Refrigerant;R290;1
+Klima;Hidden_Display;Gizli Gösterge;15
+Klima;Hidden_Display;LED Gösterge;9
+Klima;Hidden_Display;Dijital Gösterge;2
+Klima;Indoor_Unit_Cooling_Operating_Range_(°C);;14
+Klima;Indoor_Unit_Cooling_Operating_Range_(°C);18~32;10
+Klima;Indoor_Unit_Cooling_Operating_Range_(°C);-15 ~ 30;1
+Klima;Indoor_Unit_Cooling_Operating_Range_(°C);17-35℃;1
+Klima;Outdoor_Unit_Cooling_Operating_Range_(°C);-10~48;8
+Klima;Outdoor_Unit_Cooling_Operating_Range_(°C);-15～48;5
+Klima;Outdoor_Unit_Cooling_Operating_Range_(°C);-15 ~ 48;4
+Klima;Outdoor_Unit_Cooling_Operating_Range_(°C);-10 ~ 48;3
+Klima;Outdoor_Unit_Cooling_Operating_Range_(°C);-15 ~ 50;1
+Klima;Outdoor_Unit_Cooling_Operating_Range_(°C);;1
+Klima;Outdoor_Unit_Cooling_Operating_Range_(°C);-10～48;1
+Klima;Outdoor_Unit_Cooling_Operating_Range_(°C);15 ~ 50;1
+Klima;Outdoor_Unit_Cooling_Operating_Range_(°C);18~60;1
+Klima;Outdoor_Unit_Cooling_Operating_Range_(°C);-15 ~ 55;1
+Klima;Outdoor_Unit_Heating_Operating_Range_(°C);-15~24;17
+Klima;Outdoor_Unit_Heating_Operating_Range_(°C);-15 ~ 24;4
+Klima;Outdoor_Unit_Heating_Operating_Range_(°C);;2
+Klima;Outdoor_Unit_Heating_Operating_Range_(°C);10~24;2
+Klima;Outdoor_Unit_Heating_Operating_Range_(°C);-7～24;1
+Klima;Special_Filters;Kolay Çıkarılabilir Filtre;14
+Klima;Special_Filters;Ionizer +;4
+Klima;Special_Filters;;3
+Klima;Special_Filters;Temizleyici Hava Filtresi;3
+Klima;Special_Filters;Yıkanabilir Toz Filtresi;2
+Klima;Energy_Class_Heating;A+;18
+Klima;Energy_Class_Heating;;4
+Klima;Energy_Class_Heating;A;3
+Klima;Energy_Class_Heating;A+++;1
+Klima;Capacity_(Heating);;6
+Klima;Capacity_(Heating);12000 Btu/h;6
+Klima;Capacity_(Heating);9000 Btu/h;4
+Klima;Capacity_(Heating);24000 Btu/h;4
+Klima;Capacity_(Heating);18000 Btu/h;3
+Klima;Capacity_(Heating);15000 Btu/h;1
+Klima;Capacity_(Heating);25590 Btu/h;1
+Klima;Capacity_(Heating);7000 Btu/h;1
+Klima;Outdoor_Unit_(WxHxD)_mm;717x483x230;9
+Klima;Outdoor_Unit_(WxHxD)_mm;;5
+Klima;Outdoor_Unit_(WxHxD)_mm;770x545x288;4
+Klima;Outdoor_Unit_(WxHxD)_mm;870x650x330;3
+Klima;Outdoor_Unit_(WxHxD)_mm;870 x 650 x 330;2
+Klima;Outdoor_Unit_(WxHxD)_mm;717 x 483 x 230;2
+Klima;Outdoor_Unit_(WxHxD)_mm;770 x 545 x 288;1
+Klima;Indoor_Unit_(WxHxD)_mm;837x308x189;8
+Klima;Indoor_Unit_(WxHxD)_mm;;5
+Klima;Indoor_Unit_(WxHxD)_mm;998 x 345 x 212;3
+Klima;Indoor_Unit_(WxHxD)_mm;837x308x192;3
+Klima;Indoor_Unit_(WxHxD)_mm;998x345x210;3
+Klima;Indoor_Unit_(WxHxD)_mm;998x345x212;2
+Klima;Indoor_Unit_(WxHxD)_mm;837 x 308 x 192;2
+Vantilatör;Subcategory;Vantilatör;8
+Vantilatör;Motor_Type;Alternatif Akım;4
+Vantilatör;Motor_Type;BLDC;2
+Vantilatör;Motor_Type;;1
+Vantilatör;Motor_Type;Doğru Akım;1
+Vantilatör;Functions;['Var'];5
+Vantilatör;Functions;['Var', 'Var'];3
+Vantilatör;Screen_Type;;4
+Vantilatör;Screen_Type;LED;4
+Vantilatör;Control_Type;Uzaktan Kumanda;6
+Vantilatör;Control_Type;;1
+Vantilatör;Control_Type;Mekanik;1
+Vantilatör;Filter_Type;;7
+Vantilatör;Filter_Type;Ön Filtre;1
+Vantilatör;Fan_Type;Ayaklı;3
+Vantilatör;Fan_Type;Tavan Vantilatörü;2
+Vantilatör;Fan_Type;;1
+Vantilatör;Fan_Type;DC Motor Stand Fan;1
+Vantilatör;Fan_Type;AC Motor Stand Fan;1
+Hava Soğutucu;Subcategory;Hava Soğutucu;4
+Hava Soğutucu;Functions;['Var', 'Var', 'Hava Soğutucu (Evaporatif)'];3
+Hava Soğutucu;Functions;['Var', 'Hava Soğutucu (Evaporatif)'];1
+Hava Soğutucu;Screen_Type;LED;4
+Hava Soğutucu;Control_Type;Uzaktan Kumanda;4
+Hava Soğutucu;Voltage;220-240;4
+Hava Soğutucu;Fan_Type;Hava Soğutucu (Evaporatif);4
+Elektrikli Isıtıcı;Subcategory;Elektrikli Isıtıcı;8
+Elektrikli Isıtıcı;Product_Type;;4
+Elektrikli Isıtıcı;Product_Type;Infrared Isıtıcı;2
+Elektrikli Isıtıcı;Product_Type;Seramik Isıtıcı;2
+Elektrikli Isıtıcı;Programs;;6
+Elektrikli Isıtıcı;Programs;['Var'];2
+Elektrikli Isıtıcı;Control_Type;;7
+Elektrikli Isıtıcı;Control_Type;Mekanik;1
+Termosifon;Energy_Class;C;7
+Termosifon;Subcategory;Termosifon;7
+Termosifon;Indicator_Type;;4
+Termosifon;Indicator_Type;Dijital;3
+Termosifon;Functions;;4
+Termosifon;Functions;['Var', 'Var'];2
+Termosifon;Functions;['Var'];1
+Termosifon;Operating_Pressure;10 bar;6
+Termosifon;Operating_Pressure;9 bar;1
+Kombi;Energy_Class;A;8
+Kombi;Subcategory;Kombi;8
+Kombi;Capacity_(kW);24 kW;3
+Kombi;Capacity_(kW);35 kW;2
+Kombi;Capacity_(kW);30 kW;2
+Kombi;Capacity_(kW);22 kW;1
+Kombi;Seasonal_Space_Heating_Energy_Efficiency_(hs);92 %;3
+Kombi;Seasonal_Space_Heating_Energy_Efficiency_(hs);91.03 %;2
+Kombi;Seasonal_Space_Heating_Energy_Efficiency_(hs);91.86 %;2
+Kombi;Seasonal_Space_Heating_Energy_Efficiency_(hs);91 %;1
+Kombi;Maximum_Hot_Water_Flow_Rate;18 L/min;4
+Kombi;Maximum_Hot_Water_Flow_Rate;14 L/min;3
+Kombi;Maximum_Hot_Water_Flow_Rate;11 L/min;1
+Kombi;Water_Heating_Energy_Efficiency_(hWH);86 %;4
+Kombi;Water_Heating_Energy_Efficiency_(hWH);85 %;2
+Kombi;Water_Heating_Energy_Efficiency_(hWH);89 %;1
+Kombi;Water_Heating_Energy_Efficiency_(hWH);85.2 %;1
+Kombi;Sound_Power_Level_Indoors_(LWA);54 dBA;4
+Kombi;Sound_Power_Level_Indoors_(LWA);57 dBA;2
+Kombi;Sound_Power_Level_Indoors_(LWA);40 dBA;1
+Kombi;Sound_Power_Level_Indoors_(LWA);52 dBA;1
+Kombi;Expansion_Tank_Capacity;8 L;7
+Kombi;Expansion_Tank_Capacity;7 L;1
+Nem Alma Cihazı;Subcategory;Nem Alma Cihazı;1
+Isıtma Soğutma Yedek Parça ve Aksesuarları;Subcategory;Isıtma Soğutma Yedek Parça ve Aksesuarları;1
+Kahve Makinesi;Subcategory;Kahve Makinesi;71
+Kahve Makinesi;Functions;;67
+Kahve Makinesi;Functions;['Var', 'Var'];2
+Kahve Makinesi;Functions;['Var'];2
+Kahve Makinesi;Voltage;220-240;41
+Kahve Makinesi;Voltage;;28
+Kahve Makinesi;Voltage;220;2
+Kahve Makinesi;Coffee_Pot_Material;;56
+Kahve Makinesi;Coffee_Pot_Material;Plastik;9
+Kahve Makinesi;Coffee_Pot_Material;Paslanmaz Çelik;5
+Kahve Makinesi;Coffee_Pot_Material;Alüminyum;1
+Kahve Makinesi;Auto_Shut_off;;67
+Kahve Makinesi;Auto_Shut_off;1;4
+Kahve Makinesi;Pump_Pressure;;50
+Kahve Makinesi;Pump_Pressure;9 bar;10
+Kahve Makinesi;Pump_Pressure;19 bar;8
+Kahve Makinesi;Pump_Pressure;15 bar;2
+Kahve Makinesi;Pump_Pressure;20 bar;1
+Kahve Makinesi;Motor Gücü;;62
+Kahve Makinesi;Motor Gücü;310 W;4
+Kahve Makinesi;Motor Gücü;180 W;2
+Kahve Makinesi;Motor Gücü;260 W;1
+Kahve Makinesi;Motor Gücü;500 W;1
+Kahve Makinesi;Motor Gücü;280 W;1
+Çay Makinesi;Subcategory;Çay Makinesi;10
+Çay Makinesi;Voltage;;9
+Çay Makinesi;Voltage;220-240;1
+Çay Makinesi;Teapot_Capacity;0.8 L;3
+Çay Makinesi;Teapot_Capacity;;3
+Çay Makinesi;Teapot_Capacity;0.7 L;2
+Çay Makinesi;Teapot_Capacity;1.2 L;2
+Çay Makinesi;Teapot_Material;Kırılmaya Karşı 4 Kata Kadar Dayanıklılığı Arttırılmış Cam;4
+Çay Makinesi;Teapot_Material;;3
+Çay Makinesi;Teapot_Material;Paslanmaz Çelik;2
+Çay Makinesi;Teapot_Material;Cam;1
+Çay Makinesi;Water_Heater_Capacity;2 L;4
+Çay Makinesi;Water_Heater_Capacity;1.7 L;3
+Çay Makinesi;Water_Heater_Capacity;;3
+Çay Makinesi;Water_Heater_Material;Cam;4
+Çay Makinesi;Water_Heater_Material;İnoks;3
+Çay Makinesi;Water_Heater_Material;;3
+Çay Makinesi;Auto_Shut_off;1;7
+Çay Makinesi;Auto_Shut_off;;3
+Semaver;Subcategory;Semaver;2
+Semaver;Faucet;1;2
+Semaver;Teapot_Capacity;1.2 L;2
+Semaver;Teapot_Material;Cam;1
+Semaver;Teapot_Material;Kırılmaya Karşı 4 Kata Kadar Dayanıklılığı Arttırılmış Cam;1
+Semaver;Water_Heater_Capacity;3.5 L;2
+Semaver;Water_Heater_Material;Plastik;1
+Semaver;Water_Heater_Material;Paslanmaz Çelik;1
+Semaver;Auto_Shut_off;1;2
+Buz Makinesi;Subcategory;Buz Makinesi;1
+Küçük Ev Aletleri Seti;Subcategory;Küçük Ev Aletleri Seti;86
+Ev Temizlik Ekipmanları Teknolojisi;Subcategory;Ev Temizlik Ekipmanları Teknolojisi;7
+Ev Temizlik Ekipmanları Teknolojisi;Motor Gücü;;3
+Ev Temizlik Ekipmanları Teknolojisi;Motor Gücü;20.16;1
+Ev Temizlik Ekipmanları Teknolojisi;Motor Gücü;1400 W;1
+Ev Temizlik Ekipmanları Teknolojisi;Motor Gücü;1200 W;1
+Ev Temizlik Ekipmanları Teknolojisi;Motor Gücü;800 W;1
+Ev Temizlik Ekipmanları Teknolojisi;Battery;;6
+Ev Temizlik Ekipmanları Teknolojisi;Battery;14.4 V;1
+Ev Temizlik Ekipmanları Teknolojisi;Cable_Length.1;;3
+Ev Temizlik Ekipmanları Teknolojisi;Cable_Length.1;5 m;2
+Ev Temizlik Ekipmanları Teknolojisi;Cable_Length.1;1.5 m;1
+Ev Temizlik Ekipmanları Teknolojisi;Cable_Length.1;7 m;1
+Kişisel Bakım;Subcategory;Kişisel Bakım;36
+Kişisel Bakım;Functions;;27
+Kişisel Bakım;Functions;['Var'];9
+Kişisel Bakım;Auto_Shut_off;1;18
+Kişisel Bakım;Auto_Shut_off;;15
+Kişisel Bakım;Auto_Shut_off;30 Dk;3
+Kişisel Bakım;Cable_Length.1;;18
+Kişisel Bakım;Cable_Length.1;1.8 m;11
+Kişisel Bakım;Cable_Length.1;2 m;4
+Kişisel Bakım;Cable_Length.1;3 m;3
+Kişisel Bakım;Material;;34
+Kişisel Bakım;Material;Cam;2
+Kişisel Bakım;Maximum_Temperature_Degree;;15
+Kişisel Bakım;Maximum_Temperature_Degree;220 °C;8
+Kişisel Bakım;Maximum_Temperature_Degree;210 °C;6
+Kişisel Bakım;Maximum_Temperature_Degree;200 °C;4
+Kişisel Bakım;Maximum_Temperature_Degree;230 °C;2
+Kişisel Bakım;Maximum_Temperature_Degree;95 °C;1
+Kişisel Bakım;Minimum_Temperature_Degree_(°C);;15
+Kişisel Bakım;Minimum_Temperature_Degree_(°C);160 °C;5
+Kişisel Bakım;Minimum_Temperature_Degree_(°C);120 °C;5
+Kişisel Bakım;Minimum_Temperature_Degree_(°C);130 °C;3
+Kişisel Bakım;Minimum_Temperature_Degree_(°C);150 °C;2
+Kişisel Bakım;Minimum_Temperature_Degree_(°C);100 °C;2
+Kişisel Bakım;Minimum_Temperature_Degree_(°C);180 °C;1
+Kişisel Bakım;Minimum_Temperature_Degree_(°C);85 °C;1
+Kişisel Bakım;Minimum_Temperature_Degree_(°C);135 °C;1
+Kişisel Bakım;Minimum_Temperature_Degree_(°C);80 °C;1
+Kişisel Bakım;Fast_Heat_up_Time;;25
+Kişisel Bakım;Fast_Heat_up_Time;30 s;5
+Kişisel Bakım;Fast_Heat_up_Time;40 s;3
+Kişisel Bakım;Fast_Heat_up_Time;60 s;3
+Güzellik ve Bakım;Subcategory;Güzellik ve Bakım;25
+Frozen ve Slush Makinesi;Subcategory;Frozen ve Slush Makinesi;1
+Dondurma Makinesi;Subcategory;Dondurma Makinesi;1
+Outdoor Ekipman;Subcategory;Outdoor Ekipman;9
+Outdoor Ekipman;Cold_Storage_Time;11 Saat;4
+Outdoor Ekipman;Cold_Storage_Time;8 saat;3
+Outdoor Ekipman;Cold_Storage_Time;12 saat;2
+Outdoor Ekipman;Hot_Storage_Time;7 Saat;4
+Outdoor Ekipman;Hot_Storage_Time;6 saat;3
+Outdoor Ekipman;Hot_Storage_Time;8 saat;2
+Outdoor Ekipman;Iced_Storage_Time;48 saat;4
+Outdoor Ekipman;Iced_Storage_Time;30 saat;3
+Outdoor Ekipman;Iced_Storage_Time;40 saat;2
+Outdoor Ekipman;Material;18/8 paslanmaz çelik gövde ve iç hazne, BPA içermez, ısı kaybını engelleyen mandallı kapak, araba bardak tutucular ile uyumlu;5
+Outdoor Ekipman;Material;18/8 paslanmaz çelik gövde ve iç hazne, BPA içermez, FlowState™ 3 aşamalı çevrilebilir kapak,arababa bardaklığı ile uyumlu;4
+Elektrikli Süpürge;Subcategory;Elektrikli Süpürge;32
+Elektrikli Süpürge;Control_System;;10
+Elektrikli Süpürge;Control_System;Gövdeden emiş gücü ayarı;7
+Elektrikli Süpürge;Control_System;Mobil uygulama;6
+Elektrikli Süpürge;Control_System;Saptan Kontrollü;6
+Elektrikli Süpürge;Control_System;Aç-kapa kontrol;3
+Elektrikli Süpürge;Motor_Type;;14
+Elektrikli Süpürge;Motor_Type;BLDC;13
+Elektrikli Süpürge;Motor_Type;DC;5
+Elektrikli Süpürge;Programs;;26
+Elektrikli Süpürge;Programs;['Var'];6
+Elektrikli Süpürge;Functions;;27
+Elektrikli Süpürge;Functions;['Var'];5
+Elektrikli Süpürge;Motor Gücü;;9
+Elektrikli Süpürge;Motor Gücü;450 W;4
+Elektrikli Süpürge;Motor Gücü;750 W;3
+Elektrikli Süpürge;Motor Gücü;890 W;3
+Elektrikli Süpürge;Motor Gücü;800 W;2
+Elektrikli Süpürge;Motor Gücü;550 W;2
+Elektrikli Süpürge;Motor Gücü;60 W;1
+Elektrikli Süpürge;Motor Gücü;1800 W;1
+Elektrikli Süpürge;Motor Gücü;400 W;1
+Elektrikli Süpürge;Motor Gücü;250 W;1
+Elektrikli Süpürge;Motor Gücü;350 W;1
+Elektrikli Süpürge;Motor Gücü;180 W;1
+Elektrikli Süpürge;Motor Gücü;150 W;1
+Elektrikli Süpürge;Motor Gücü;20.16;1
+Elektrikli Süpürge;Motor Gücü;1100;1
+Elektrikli Süpürge;Battery;;16
+Elektrikli Süpürge;Battery;14.4 V;6
+Elektrikli Süpürge;Battery;25.2 V;6
+Elektrikli Süpürge;Battery;21.6 V;2
+Elektrikli Süpürge;Battery;28.8 V;1
+Elektrikli Süpürge;Battery;18 V;1
+Elektrikli Süpürge;Cable_Length.1;;18
+Elektrikli Süpürge;Cable_Length.1;6 m;6
+Elektrikli Süpürge;Cable_Length.1;2 m;1
+Elektrikli Süpürge;Cable_Length.1;7 m;1
+Elektrikli Süpürge;Cable_Length.1;5.4 m;1
+Elektrikli Süpürge;Cable_Length.1;8 m;1
+Elektrikli Süpürge;Cable_Length.1;5 m;1
+Elektrikli Süpürge;Cable_Length.1;1.6 m;1
+Elektrikli Süpürge;Cable_Length.1;1.5 m;1
+Elektrikli Süpürge;Cable_Length.1;7.5 m;1
+Elektrikli Süpürge;Operating_Radius_(m);;24
+Elektrikli Süpürge;Operating_Radius_(m);8,5;5
+Elektrikli Süpürge;Operating_Radius_(m);9;2
+Elektrikli Süpürge;Operating_Radius_(m);11;1
+Elektrikli Süpürge;Cable_Winder;;23
+Elektrikli Süpürge;Cable_Winder;Standart Kablo Sarıcı;7
+Elektrikli Süpürge;Cable_Winder;Düğme / Çek bırak kablo sarıcı;1
+Elektrikli Süpürge;Cable_Winder;1;1
+Elektrikli Süpürge;Parking_Feature;;15
+Elektrikli Süpürge;Parking_Feature;Yatay ve dikey;8
+Elektrikli Süpürge;Parking_Feature;Yatay;7
+Elektrikli Süpürge;Parking_Feature;Dikey;2
+Elektrikli Süpürge;Parquet_/_Carpet_Brush;;19
+Elektrikli Süpürge;Parquet_/_Carpet_Brush;1;12
+Elektrikli Süpürge;Parquet_/_Carpet_Brush;Air Vortex®;1
+Elektrikli Süpürge;Extension_Tube;;20
+Elektrikli Süpürge;Extension_Tube;Metal teleskopik boru;6
+Elektrikli Süpürge;Extension_Tube;Plastik iki parça;2
+Elektrikli Süpürge;Extension_Tube;Alüminyum Teleskopik Boru;2
+Elektrikli Süpürge;Extension_Tube;1;1
+Elektrikli Süpürge;Extension_Tube;Plastic;1
+Elektrikli Süpürge;Wireless_Operating_Time_(High_Power);;16
+Elektrikli Süpürge;Wireless_Operating_Time_(High_Power);50 dk;4
+Elektrikli Süpürge;Wireless_Operating_Time_(High_Power);10 dk;3
+Elektrikli Süpürge;Wireless_Operating_Time_(High_Power);16 dk;2
+Elektrikli Süpürge;Wireless_Operating_Time_(High_Power);18 dk;2
+Elektrikli Süpürge;Wireless_Operating_Time_(High_Power);15 dk;1
+Elektrikli Süpürge;Wireless_Operating_Time_(High_Power);12 dk;1
+Elektrikli Süpürge;Wireless_Operating_Time_(High_Power);9 dk;1
+Elektrikli Süpürge;Wireless_Operating_Time_(High_Power);60 dk;1
+Elektrikli Süpürge;Wireless_Operating_Time_(High_Power);65 dk;1
+Elektrikli Süpürge;Battery_Type;;18
+Elektrikli Süpürge;Battery_Type;Li-Ion;10
+Elektrikli Süpürge;Battery_Type;Lityum;4
+Ütü;Subcategory;Ütü;14
+Ütü;Auto_Shut_off;1;8
+Ütü;Auto_Shut_off;;6
+Ütü;Cable_Length.1;;13
+Ütü;Cable_Length.1;190;1
+Ütü;Cable_Winder;;13
+Ütü;Cable_Winder;1;1
+Ütü;Soleplate;SoftGlide® Seramik Taban;8
+Ütü;Soleplate;;3
+Ütü;Soleplate;Seramik;2
+Ütü;Soleplate;Cross Steam®;1
+Ütü;Steam_Boost;;7
+Ütü;Steam_Boost;280 gram;1
+Ütü;Steam_Boost;600 gr/dk;1
+Ütü;Steam_Boost;450 gr/dk;1
+Ütü;Steam_Boost;270 gram;1
+Ütü;Steam_Boost;150 gr/dk;1
+Ütü;Steam_Boost;360 gr/dk;1
+Ütü;Steam_Boost;230 gram;1
+Ütü;Continuous_Steam;45 gr/dk;3
+Ütü;Continuous_Steam;;3
+Ütü;Continuous_Steam;63 gr/dk;1
+Ütü;Continuous_Steam;165 gr/dk;1
+Ütü;Continuous_Steam;150 gr/dk;1
+Ütü;Continuous_Steam;30 gr/dk;1
+Ütü;Continuous_Steam;25 gr/dk;1
+Ütü;Continuous_Steam;55 gr/dk;1
+Ütü;Continuous_Steam;40 gr/dk;1
+Ütü;Continuous_Steam;110 gr/dk;1
+Ütü;Vertical_Auto_Shut_off_Time;;7
+Ütü;Vertical_Auto_Shut_off_Time;30 dk;4
+Ütü;Vertical_Auto_Shut_off_Time;8 dk;3
+Ütü;Horizontal_Auto_Shut_off_Time;;7
+Ütü;Horizontal_Auto_Shut_off_Time;8 dk;4
+Ütü;Horizontal_Auto_Shut_off_Time;30 s;2
+Ütü;Horizontal_Auto_Shut_off_Time;30 dk;1
+Karıştırıcı& Doğrayıcı;Subcategory;Karıştırıcı& Doğrayıcı;27
+Karıştırıcı& Doğrayıcı;Functions;;22
+Karıştırıcı& Doğrayıcı;Functions;['Var'];5
+Karıştırıcı& Doğrayıcı;Body_Material;;22
+Karıştırıcı& Doğrayıcı;Body_Material;Plastik;4
+Karıştırıcı& Doğrayıcı;Body_Material;Döküm;1
+Karıştırıcı& Doğrayıcı;Chopper_Bowl_Material;;16
+Karıştırıcı& Doğrayıcı;Chopper_Bowl_Material;Plastik;7
+Karıştırıcı& Doğrayıcı;Chopper_Bowl_Material;Cam;4
+Karıştırıcı& Doğrayıcı;Speed_Setting;;16
+Karıştırıcı& Doğrayıcı;Speed_Setting;1;6
+Karıştırıcı& Doğrayıcı;Speed_Setting;10;2
+Karıştırıcı& Doğrayıcı;Speed_Setting;6;2
+Karıştırıcı& Doğrayıcı;Speed_Setting;12;1
+Karıştırıcı& Doğrayıcı;Measuring_Cup;;13
+Karıştırıcı& Doğrayıcı;Measuring_Cup;1.75 mL;4
+Karıştırıcı& Doğrayıcı;Measuring_Cup;0.6 L;4
+Karıştırıcı& Doğrayıcı;Measuring_Cup;1.5 mL;2
+Karıştırıcı& Doğrayıcı;Measuring_Cup;1;1
+Karıştırıcı& Doğrayıcı;Measuring_Cup;1 mL;1
+Karıştırıcı& Doğrayıcı;Measuring_Cup;900 mL;1
+Karıştırıcı& Doğrayıcı;Measuring_Cup;0.5 mL;1
+UV Temizleme Cihazı;Subcategory;UV Temizleme Cihazı;1
+Yoğurt &Kefir Makinesi;Subcategory;Yoğurt &Kefir Makinesi;3
+Kettle;Subcategory;Kettle;6
+Katı Meyve Sıkacağı;Subcategory;Katı Meyve Sıkacağı;1
+Narenciye Sıkacağı;Subcategory;Narenciye Sıkacağı;2
