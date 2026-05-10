@@ -331,6 +331,67 @@ def inject_css():
             border-radius: 18px;
             overflow: hidden;
         }}
+
+        /* Expander Başlık Renkleri */
+        /* Keşfedilmemiş Teknoloji */
+        div[data-testid="stExpander"]:nth-of-type(1) details {{
+            background-color: #C1E6FB !important;
+            border-radius: 10px;
+        }}
+        div[data-testid="stExpander"]:nth-of-type(1) summary p {{
+            color: #172033 !important;
+            font-weight: bold;
+        }}
+
+        /* Fırsat / Yıldız Ürünler */
+        div[data-testid="stExpander"]:nth-of-type(2) details {{
+            background-color: #FD4040 !important;
+            border-radius: 10px;
+        }}
+        div[data-testid="stExpander"]:nth-of-type(2) summary p {{
+            color: white !important;
+            font-weight: bold;
+        }}
+
+        /* Premium / Lüks */
+        div[data-testid="stExpander"]:nth-of-type(3) details {{
+            background-color: #313BFB !important;
+            border-radius: 10px;
+        }}
+        div[data-testid="stExpander"]:nth-of-type(3) summary p {{
+            color: white !important;
+            font-weight: bold;
+        }}
+
+        /* Popüler Ekonomik */
+        div[data-testid="stExpander"]:nth-of-type(4) details {{
+            background-color: #015EC7 !important;
+            border-radius: 10px;
+        }}
+        div[data-testid="stExpander"]:nth-of-type(4) summary p {{
+            color: white !important;
+            font-weight: bold;
+        }}
+
+        /* Niş / Aşırı Fiyatlandırılmış */
+        div[data-testid="stExpander"]:nth-of-type(5) details {{
+            background-color: #81B3CE !important;
+            border-radius: 10px;
+        }}
+        div[data-testid="stExpander"]:nth-of-type(5) summary p {{
+            color: #172033 !important;
+            font-weight: bold;
+        }}
+
+        /* Düşük Segment (Giriş Seviyesi) */
+        div[data-testid="stExpander"]:nth-of-type(6) details {{
+            background-color: #002252 !important;
+            border-radius: 10px;
+        }}
+        div[data-testid="stExpander"]:nth-of-type(6) summary p {{
+            color: white !important;
+            font-weight: bold;
+        }}
         </style>
         """,
         unsafe_allow_html=True
@@ -437,7 +498,7 @@ filtered_df = filtered_df[
 ]
 
 
-# 7. GÖRSELLEŞTİRME (3D GRAFİK)
+# 7. GÖRSELLEŞTİRME (3D GRAFİK VE STRATEJİLER)
 st.markdown(f"""
     <div class="main-header">
         <div class="badge">Veri Odaklı Ürün Stratejisi</div>
@@ -446,40 +507,103 @@ st.markdown(f"""
     </div>
 """, unsafe_allow_html=True)
 
-# Grafik eksenleri için ölçeklenmiş verileri kullanmak 3D görünümü daha dengeli yapar
-if not filtered_df.empty:
-    fig = px.scatter_3d(
-        filtered_df, 
-        x='Relative_Feature_Score',  # Teknoloji
-        y='Scaled_Price',            # Fiyat
-        z='Scaled_Favorite',         # Favori
-        color='Segmentation_Name',   # Verideki gerçek sütun ismi
-        color_discrete_map=BEKO_COLOR_MAP,
-        hover_name='Product_Name',
-        hover_data={'Price': True, 'Segmentation_Name': True, 'Relative_Feature_Score': False, 'Scaled_Price': False, 'Scaled_Favorite': False}
-    )
+# Grafik ve Stratejiler için Yan Yana Düzen (2/3 Grafik, 1/3 Strateji)
+col1, col2 = st.columns([2, 1])
 
-    # Grafiğin arka planını transparan veya koyu tema yapmak istersen:
-    fig.update_layout(
-        scene=dict(
-            xaxis_title='Teknoloji',
-            yaxis_title='FİYAT (Ağırlıklı)',
-            zaxis_title='Popülarite',
-            xaxis=dict(backgroundcolor=BEKO_GRAY, gridcolor='white', showbackground=True),
-            yaxis=dict(backgroundcolor=BEKO_GRAY, gridcolor='white', showbackground=True),
-            zaxis=dict(backgroundcolor=BEKO_GRAY, gridcolor='white', showbackground=True),
-            camera=dict(eye=dict(x=1.2, y=2.0, z=0.9))
-        ),
-        paper_bgcolor=BEKO_GRAY,
-        plot_bgcolor=BEKO_GRAY,
-        font=dict(color=BEKO_DARK),
-        legend=dict(title='Cluster', orientation='h', y=0.98, x=0.02),
-        margin=dict(l=0, r=0, b=0, t=40)
-    )
-    fig.update_traces(marker=dict(size=6)) 
-    st.plotly_chart(fig, use_container_width=True)
-else:
-    st.warning("Seçilen filtrelere uygun veri bulunamadı veya sayısal değerler eksik.")
+with col1:
+    # Grafik eksenleri için ölçeklenmiş verileri kullanmak 3D görünümü daha dengeli yapar
+    if not filtered_df.empty:
+        fig = px.scatter_3d(
+            filtered_df, 
+            x='Relative_Feature_Score',  # Teknoloji
+            y='Scaled_Price',            # Fiyat
+            z='Scaled_Favorite',         # Favori
+            color='Segmentation_Name',   # Verideki gerçek sütun ismi
+            color_discrete_map=BEKO_COLOR_MAP,
+            hover_name='Product_Name',
+            hover_data={'Price': True, 'Segmentation_Name': True, 'Relative_Feature_Score': False, 'Scaled_Price': False, 'Scaled_Favorite': False}
+        )
+
+        # Grafiğin arka planını transparan veya koyu tema yapmak istersen:
+        fig.update_layout(
+            scene=dict(
+                xaxis_title='Teknoloji',
+                yaxis_title='FİYAT (Ağırlıklı)',
+                zaxis_title='Popülarite',
+                xaxis=dict(backgroundcolor=BEKO_GRAY, gridcolor='white', showbackground=True),
+                yaxis=dict(backgroundcolor=BEKO_GRAY, gridcolor='white', showbackground=True),
+                zaxis=dict(backgroundcolor=BEKO_GRAY, gridcolor='white', showbackground=True),
+                camera=dict(eye=dict(x=1.2, y=2.0, z=0.9))
+            ),
+            height=600,
+            paper_bgcolor=BEKO_GRAY,
+            plot_bgcolor=BEKO_GRAY,
+            font=dict(color=BEKO_DARK),
+            legend=dict(title='Cluster', orientation='h', y=0.98, x=0.02),
+            margin=dict(l=0, r=0, b=0, t=10)
+        )
+        fig.update_traces(marker=dict(size=6)) 
+        st.plotly_chart(fig, use_container_width=True)
+    else:
+        st.warning("Seçilen filtrelere uygun veri bulunamadı veya sayısal değerler eksik.")
+
+with col2:
+    st.markdown("### 📊 Stratejik Öneriler")
+    st.markdown("<p style='font-size: 0.9rem; color: #667085;'>Kategori detaylarını görmek için tıklayın.</p>", unsafe_allow_html=True)
+    
+    # Ürün sayılarını hesapla (Filtrelenmiş veri üzerinden)
+    seg_counts = filtered_df['Segmentation_Name'].value_counts()
+    
+    def get_count(name):
+        return seg_counts.get(name, 0)
+
+    with st.expander(f"Keşfedilmemiş Teknoloji ({get_count('Keşfedilmemiş Teknoloji')})"):
+        st.markdown(f"""
+            <div style='background-color:#C1E6FB; padding:15px; border-radius:10px; border-left: 5px solid #00AEEF; margin-bottom:10px;'>
+                <strong style='color:#172033;'>Profil:</strong> <span style='color:#172033;'>Yüksek teknoloji, düşük fiyat, düşük popülarite.</span><br><br>
+                <strong style='color:#172033;'>Strateji:</strong> <span style='color:#172033;'>Görünürlüğü düşük ancak potansiyeli yüksek olan bu ürünler için reklam bütçeleri artırılmalı ve e-ticaret platformunda öne çıkarılmalıdır. Ürün görselleri ve açıklamaları iyileştirilerek cazibesi artırılmalıdır.</span>
+            </div>
+        """, unsafe_allow_html=True)
+
+    with st.expander(f"Fırsat / Yıldız Ürünler ({get_count('Fırsat / Yıldız Ürünler')})"):
+        st.markdown(f"""
+            <div style='background-color:#FD4040; padding:15px; border-radius:10px; border-left: 5px solid #CC0000; margin-bottom:10px;'>
+                <strong style='color:white;'>Profil:</strong> <span style='color:white;'>Yüksek teknoloji, düşük fiyat, yüksek popülarite.</span><br><br>
+                <strong style='color:white;'>Strateji:</strong> <span style='color:white;'>Satış dönüşüm oranı en yüksek olan amiral gemisi ürünlerdir. Kampanya ve indirim dönemlerinde ana sayfada ve reklamlarda doğrudan vitrine konumlandırılmalıdır.</span>
+            </div>
+        """, unsafe_allow_html=True)
+
+    with st.expander(f"Premium / Lüks ({get_count('Premium / Lüks')})"):
+        st.markdown(f"""
+            <div style='background-color:#313BFB; padding:15px; border-radius:10px; border-left: 5px solid #0000CC; margin-bottom:10px;'>
+                <strong style='color:white;'>Profil:</strong> <span style='color:white;'>Yüksek teknoloji, yüksek fiyat, değişken popülarite.</span><br><br>
+                <strong style='color:white;'>Strateji:</strong> <span style='color:white;'>Kalite ve statü odaklı niş bir kitleye hitap eder. VIP müşteri hizmetleri ve özel hedef kitleli premium dijital reklamlarla desteklenmelidir.</span>
+            </div>
+        """, unsafe_allow_html=True)
+
+    with st.expander(f"Popüler Ekonomik ({get_count('Popüler Ekonomik')})"):
+        st.markdown(f"""
+            <div style='background-color:#015EC7; padding:15px; border-radius:10px; border-left: 5px solid #003366; margin-bottom:10px;'>
+                <strong style='color:white;'>Profil:</strong> <span style='color:white;'>Düşük teknoloji, düşük fiyat, yüksek popülarite.</span><br><br>
+                <strong style='color:white;'>Strateji:</strong> <span style='color:white;'>Sürümden kazanılan ana akım ürünlerdir. Stoklar her zaman dolu tutulmalı ve hacimli satışlar için paket kampanyalarla desteklenmelidir.</span>
+            </div>
+        """, unsafe_allow_html=True)
+
+    with st.expander(f"Niş / Aşırı Fiyatlandırılmış ({get_count('Niş / Aşırı Fiyatlandırılmış')})"):
+        st.markdown(f"""
+            <div style='background-color:#81B3CE; padding:15px; border-radius:10px; border-left: 5px solid #4A708B; margin-bottom:10px;'>
+                <strong style='color:#172033;'>Profil:</strong> <span style='color:#172033;'>Düşük teknoloji, yüksek fiyat, değişken popülarite.</span><br><br>
+                <strong style='color:#172033;'>Strateji:</strong> <span style='color:#172033;'>Donanımına kıyasla fiyatı yüksek kalan ürünlerdir. Fiyat/performans optimizasyonu yapılmalı veya yaşam döngüsünü tamamladıysa üretimden çekilmelidir.</span>
+            </div>
+        """, unsafe_allow_html=True)
+
+    with st.expander(f"Düşük Segment (Giriş Seviyesi) ({get_count('Düşük Segment (Giriş Seviyesi)')})"):
+        st.markdown(f"""
+            <div style='background-color:#002252; padding:15px; border-radius:10px; border-left: 5px solid #000000; margin-bottom:10px;'>
+                <strong style='color:white;'>Profil:</strong> <span style='color:white;'>Düşük teknoloji, düşük fiyat, düşük popülarite.</span><br><br>
+                <strong style='color:white;'>Strateji:</strong> <span style='color:white;'>Temel ihtiyaçları karşılayan sade cihazlardır. Reklam bütçesi harcamak yerine, fiyat hassasiyeti yüksek kitleler için temel görünürlük çalışmaları yapılmalı ve stok verimliliği odaklı bir süreç izlenmelidir.</span>
+            </div>
+        """, unsafe_allow_html=True)
 
 
 # 8. VERİ TABLOSU VE LİNKLER
